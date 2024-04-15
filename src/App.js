@@ -51,7 +51,8 @@ const style3 = {
               width="180" 
               loading={isLoading} />
         </div>   :
-      <BrowserRouter>
+      // <BrowserRouter>
+      <div>
        <Header/>
            <Routes>
             <Route path="/Skills" element={<Skills />} />
@@ -73,7 +74,8 @@ const style3 = {
             />
            </div>
         <Footer/>
-     </BrowserRouter>
+     {/* </BrowserRouter> */}
+     </div>
      }
   
   </>

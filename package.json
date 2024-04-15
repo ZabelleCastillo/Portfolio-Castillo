@@ -1,7 +1,8 @@
 {
-  "homepage": "https://ZabelleCastillo.github.io/Portfolio-Castillo",
+
   "name": "software-rates-app",
   "version": "0.1.0",
+  "homepage": "https://ZabelleCastillo.github.io/Portfolio-Castillo",
   "private": true,
   "dependencies": {
     "@canvasjs/charts": "^3.8.1",
@@ -41,9 +42,9 @@
     "yup": "^1.4.0"
   },
   "scripts": {
-    "start": "react-scripts start",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
