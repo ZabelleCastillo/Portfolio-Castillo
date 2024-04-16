@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Castillo/static/css/main.88a8ee6a.css",
-    "main.js": "/Portfolio-Castillo/static/js/main.5b94fbb6.js",
+    "main.js": "/Portfolio-Castillo/static/js/main.b2a50d99.js",
     "static/js/453.a896885d.chunk.js": "/Portfolio-Castillo/static/js/453.a896885d.chunk.js",
     "static/media/SchoolManagement.jpg": "/Portfolio-Castillo/static/media/SchoolManagement.507c721509a18e29c5b9.jpg",
     "static/media/MotorcycleInventory.jpg": "/Portfolio-Castillo/static/media/MotorcycleInventory.9b29119d0c3b6e13f7a3.jpg",
@@ -39,11 +39,11 @@
     "static/media/automationtesting.jpg": "/Portfolio-Castillo/static/media/automationtesting.7f8d0e0d62ec34c3b97f.jpg",
     "index.html": "/Portfolio-Castillo/index.html",
     "main.88a8ee6a.css.map": "/Portfolio-Castillo/static/css/main.88a8ee6a.css.map",
-    "main.5b94fbb6.js.map": "/Portfolio-Castillo/static/js/main.5b94fbb6.js.map",
+    "main.b2a50d99.js.map": "/Portfolio-Castillo/static/js/main.b2a50d99.js.map",
     "453.a896885d.chunk.js.map": "/Portfolio-Castillo/static/js/453.a896885d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.88a8ee6a.css",
-    "static/js/main.5b94fbb6.js"
+    "static/js/main.b2a50d99.js"
   ]
 }
