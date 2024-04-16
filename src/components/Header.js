@@ -278,8 +278,8 @@ export default function Header(propsBackTop,propsElevate) {
                         }
 
                         //to="/"
-                        //onClick={event =>  window.location.href='/'}
-                       to={"/"} onClick={event =>  window.location.href='/'}
+                      onClick={event =>  window.location.href='/'}
+                      //  to={"/"} onClick={event =>  window.location.href='/'}
                       >
                              <Button to="get-info-home"
                                 className="headerNavlink"

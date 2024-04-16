@@ -1,8 +1,7 @@
 {
-
+  "homepage": "https://zabellecastillo.github.io/Portfolio-Castillo/",
   "name": "software-rates-app",
   "version": "0.1.0",
-  "homepage": "https://ZabelleCastillo.github.io/Portfolio-Castillo",
   "private": true,
   "dependencies": {
     "@canvasjs/charts": "^3.8.1",

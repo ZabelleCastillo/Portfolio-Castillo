@@ -1,7 +1,7 @@
 import Home from "./components/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import {useState, useEffect} from 'react';
 import React from 'react';
 import './App.css';
@@ -52,7 +52,7 @@ const style3 = {
               loading={isLoading} />
         </div>   :
       // <BrowserRouter>
-      <div>
+      <>
        <Header/>
            <Routes>
             <Route path="/Skills" element={<Skills />} />
@@ -62,7 +62,7 @@ const style3 = {
             <Route path="/Projects" element={<Projects />} />
             <Route path="/Experiences" element={<Experiences />} />
             <Route path="/About" element={<AboutMe />} />
-            <Route path="/" element={<Home />} />
+            <Route exact path="/" element={<Home />} />
           </Routes> 
          
            <div style={style3}>
@@ -75,7 +75,7 @@ const style3 = {
            </div>
         <Footer/>
      {/* </BrowserRouter> */}
-     </div>
+     </>
      }
   
   </>
