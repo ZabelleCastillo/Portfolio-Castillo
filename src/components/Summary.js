@@ -12,7 +12,8 @@ import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
 import '../App.css';
 import ScrollAnimation from 'react-animate-on-scroll';
-// import { useNavigate } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 // const observer = new IntersectionObserver((entries) => {
 //     entries.forEach((entry) => {
 //         console.log(entry)
@@ -31,7 +32,7 @@ import ScrollAnimation from 'react-animate-on-scroll';
 
 
 export default function Summary() {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
   return (
     <>
    <Container sx={{padding: '2rem'}}>
@@ -73,9 +74,10 @@ export default function Summary() {
                         </CardContent>
                     </CardActionArea>
                         <center> 
+                                    {/* <NavLink to="/About" > */}
                                           <Button   
-                                            //onClick={()=> navigate("/About")}
-                                             onClick={event =>  window.location.href='/About'}
+                                            onClick={()=> navigate("/About")}
+                                             //onClick={event =>  window.location.href='/About'}
                                             sx={{ "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                                 style={{
                                                   borderRadius: 35,
@@ -84,7 +86,8 @@ export default function Summary() {
                                                   fontSize: "13px",
                                                   }} 
                                                   variant="contained"> More...
-                                          </Button>   
+                                          </Button>  
+                                    {/* </NavLink>  */}
                         </center>
                         <br />
                     </Card>
@@ -117,9 +120,10 @@ export default function Summary() {
                             </CardContent>
                         </CardActionArea>
                         <center>
+                            {/* <NavLink to="/Experiences" > */}
                             <Button  size="small" color="primary"
-                                    //onClick={()=> navigate("/Experiences")}
-                                    onClick={event =>  window.location.href='/Experiences'}
+                                    onClick={()=> navigate("/Experiences")}
+                                    //onClick={event =>  window.location.href='/Experiences'}
                                     sx={{ "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                     style={{
                                         borderRadius: 35,
@@ -129,6 +133,7 @@ export default function Summary() {
                                     }} 
                                     variant="contained"> More...
                             </Button> 
+                            {/* </NavLink> */}
                         </center>
                         <br />
                         </Card>
@@ -160,9 +165,10 @@ export default function Summary() {
                             </CardContent>
                         </CardActionArea>
                         <center>
+                        {/* <NavLink to="/Projects" > */}
                             <Button  size="small" color="primary"
-                                    //onClick={()=> navigate("/Projects")}
-                                    onClick={event =>  window.location.href='/Projects'}
+                                    onClick={()=> navigate("/Projects")}
+                                    //onClick={event =>  window.location.href='/Projects'}
                                     sx={{ "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                     style={{
                                         borderRadius: 35,
@@ -172,6 +178,7 @@ export default function Summary() {
                                     }} 
                                     variant="contained"> More...
                             </Button> 
+                        {/* </NavLink> */}
                         </center>
                         <br />
                         </Card>

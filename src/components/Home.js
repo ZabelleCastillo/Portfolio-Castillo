@@ -7,7 +7,7 @@ import IconButton from '@mui/material/IconButton';
 import Tooltip from '@mui/material/Tooltip';
 import Grid from '@mui/material/Grid';
 import JB from '../assets/JB.png';
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -20,7 +20,7 @@ import { makeStyles } from '@mui/styles';
 import { motion as m } from "framer-motion";
 import { Link as Scroll } from "react-scroll";
 import {Helmet} from "react-helmet";
-
+import { NavLink } from "react-router-dom";
 ////////////////////////////////////////
 
 //////////////////////////////////////////////////
@@ -41,7 +41,7 @@ const useStyles = makeStyles({
 
 export default function Home(propsBackTop,propsElevate) {
   const classes = useStyles()
-  // const navigate = useNavigate();
+ const navigate = useNavigate();
 
   /////////////////////////////////////
 
@@ -156,9 +156,10 @@ export default function Home(propsBackTop,propsElevate) {
                                               alignItems= "center"
                                               justifyContent= "center"
                                           >
-                                        
+                                              {/* <NavLink to="/Contact" > */}
                                                 <Button className={classes.button} 
-                                                onClick={event =>  window.location.href='/Contact'}
+                                                onClick={()=> navigate("/Contact")}
+                                                //onClick={event =>  window.location.href='/Contact'}
                                                       style={{
                                                         borderRadius: 35,
                                                         backgroundColor: "#002E4E",
@@ -167,29 +168,35 @@ export default function Home(propsBackTop,propsElevate) {
                                                     }}
                                                   variant="contained">Let's talk
                                                 </Button> &nbsp;                                  
-                                              
+                                                {/* </NavLink>    */}
+                                                {/* <NavLink to="/Services" > */}
                                               <Button className={classes.button} 
+                                              onClick={()=> navigate("/Services")}
                                                   style={{
                                                     borderRadius: 35,
                                                     backgroundColor: "#002E4E",
                                                     padding: "8px 16px",
                                                     fontSize: "13px",
                                                 }}
-                                                onClick={event =>  window.location.href='/Services'}
+                                                //onClick={event =>  window.location.href='/Services'}
                                                 // onClick={()=> navigate("/Services")}
                                               variant="contained">Services
                                               </Button> &nbsp;
-                                              
+                                              {/* </NavLink> */}
+                                              {/* <NavLink to="/Projects" > */}
                                               <Button className={classes.button} 
+                                              onClick={()=> navigate("/Projects")}
                                                   style={{
                                                     borderRadius: 35,
                                                     backgroundColor: "#002E4E",
                                                     padding: "8px 16px",
                                                     fontSize: "13px",
                                                 }}
-                                                onClick={event =>  window.location.href='/Projects'}
+                                                //onClick={event =>  window.location.href='/Projects'}
                                                 //onClick={()=> navigate("/Projects")}
-                                              variant="contained">Projects</Button>
+                                              variant="contained">Projects
+                                              </Button>
+                                              {/* </NavLink> */}
                                            </Grid>  
 
                                               <Grid container direction={{ xs: 'column', sm: 'row' }} padding='5px'
