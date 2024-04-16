@@ -19,6 +19,7 @@ import books from '../assets/Services/books.gif';
 import bubblechat from '../assets/Services/bubblechat.gif';
 import bg5 from '../assets/BG/js_unsplash.jpg';
 import {Helmet} from "react-helmet";
+import { useNavigate } from "react-router-dom";
 
 const background = {
   backgroundImage: `url(${bg5})`,
@@ -47,6 +48,8 @@ const Item2 = styled(Paper)(({ theme }) => ({
   }));
 
 export default function Services() {
+  const navigate = useNavigate();
+  ///////////////////////////////////
   const [checkedSlide, setCheckedSlide] = useState(false);
   useEffect(() => {
     setCheckedSlide(true);
@@ -102,7 +105,8 @@ export default function Services() {
                             </Typography>
                           <br/>
                             <Button   sx={{ "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
-                                onClick={event =>  window.location.href='/Contact'}
+                                  onClick={()=> navigate("/Contact")}
+                                // onClick={event =>  window.location.href='/Contact'}
                                   style={{
                                      borderRadius: 35,
                                      backgroundColor: "#002E4E",
