@@ -1,5 +1,6 @@
 // import * as React from 'react';
 import { useEffect, useState } from "react";
+import { NavLink } from "react-router-dom";
 import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -185,15 +186,20 @@ export default function AboutMe() {
                                   </Typography>  
                                   <br />  
                               <Tooltip title="Kindly click to reveal a comprehensive display of my skills and experiences.">
-                                <Typography
-                                    className="typographyText"
-                                    sx={{ "&:hover": { color: "#d9ff00", pointer: 'cursor' } }}
-                                    onClick={
-                                      () => window.open('/Skills', '_blank', 'noopener')
-                                    }
-                                >
-                                    {<InfoIcon/>} Skill sets...
-                                </Typography> 
+                                <NavLink
+                                  to="/Skills"
+                                  //onClick={event =>  window.location.href='/About'}
+                                  >
+                                    <Typography
+                                        className="typographyText"
+                                        sx={{ "&:hover": { color: "#d9ff00", pointer: 'cursor' } }}
+                                    
+                                        // onClick={
+                                        //   () => window.open('/Skills', '_blank', 'noopener')}
+                                    >
+                                      {<InfoIcon/>} Skill sets...
+                                    </Typography> 
+                                </NavLink>
                               </Tooltip>                 
                             </Item>
                     </Grid>
