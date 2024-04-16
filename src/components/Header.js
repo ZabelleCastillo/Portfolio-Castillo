@@ -121,7 +121,8 @@ export default function Header(propsBackTop,propsElevate) {
                   ? { textDecoration: "none", color: "#d9ff00" }
                   : { textDecoration: "none", color: "white" }
               }
-              to={'/'} onClick={event =>  window.location.href='/'}          
+              to="/"
+              //to={'/'} onClick={event =>  window.location.href='/'}          
             >
               <ListItemButton to="get-info-home"  
               sx={{ textAlign: "center" }}>
@@ -135,9 +136,9 @@ export default function Header(propsBackTop,propsElevate) {
                   ? { textDecoration: "none", color: "#d9ff00" }
                   : { textDecoration: "none", color: "white" }
               }
-              //to="/About"
+              to="/About"
               //onClick={event =>  window.location.href='/About'}
-              to={'/About'} onClick={event =>  window.location.href='/About'}  
+              //to={'/About'} onClick={event =>  window.location.href='/About'}  
             >
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary="ABOUT" />
@@ -150,9 +151,9 @@ export default function Header(propsBackTop,propsElevate) {
                   ? { textDecoration: "none", color: "#d9ff00" }
                   : { textDecoration: "none", color: "white" }
               }
-              //to="/Experiences"
+              to="/Experiences"
               //onClick={event =>  window.location.href='/Experiences'}
-              to={'/Experiences'} onClick={event =>  window.location.href='/Experiences'}  
+              //to={'/Experiences'} onClick={event =>  window.location.href='/Experiences'}  
             >
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary="EXPERIENCES" />
@@ -165,9 +166,9 @@ export default function Header(propsBackTop,propsElevate) {
                   ? { textDecoration: "none", color: "#d9ff00" }
                   : { textDecoration: "none", color: "white" }
               }
-              // to="/Projects"
+              to="/Projects"
               //onClick={event =>  window.location.href='/Projects'}
-              to={'/Projects'} onClick={event =>  window.location.href='/Projects'}  
+              //to={'/Projects'} onClick={event =>  window.location.href='/Projects'}  
             >
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary="PROJECTS" />
@@ -180,9 +181,9 @@ export default function Header(propsBackTop,propsElevate) {
                   ? { textDecoration: "none", color: "#d9ff00" }
                   : { textDecoration: "none", color: "white" }
               }
-              // to="/Acknowledgment"
+              to="/Acknowledgment"
               // onClick={event =>  window.location.href='/Acknowledgment'}
-              to={'/Acknowledgment'} onClick={event =>  window.location.href='/Acknowledgment'}  
+              //to={'/Acknowledgment'} onClick={event =>  window.location.href='/Acknowledgment'}  
             >
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary="ACKNOWLEDGMENT" />
@@ -195,9 +196,9 @@ export default function Header(propsBackTop,propsElevate) {
                   ? { textDecoration: "none", color: "#d9ff00" }
                   : { textDecoration: "none", color: "white" }
               }
-              // to="/Services"
+              to="/Services"
               // onClick={event =>  window.location.href='/Services'}
-              to={'/Services'} onClick={event =>  window.location.href='/Services'}  
+              //to={'/Services'} onClick={event =>  window.location.href='/Services'}  
             >
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary="SERVICES" />
@@ -210,9 +211,9 @@ export default function Header(propsBackTop,propsElevate) {
                   ? { textDecoration: "none", color: "#d9ff00" }
                   : { textDecoration: "none", color: "white" }
               }
-              // to="/Contact"
+              to="/Contact"
               // onClick={event =>  window.location.href='/Contact'}
-              to={'/Contact'} onClick={event =>  window.location.href='/Contact'}  
+              //to={'/Contact'} onClick={event =>  window.location.href='/Contact'}  
             >
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary="CONTACT" />
@@ -277,8 +278,8 @@ export default function Header(propsBackTop,propsElevate) {
                             : { textDecoration: "none", color: "white" }
                         }
 
-                        //to="/"
-                      onClick={event =>  window.location.href='/'}
+                      to="/"
+                      //onClick={event =>  window.location.href='/'}
                       //  to={"/"} onClick={event =>  window.location.href='/'}
                       >
                              <Button to="get-info-home"
@@ -294,8 +295,8 @@ export default function Header(propsBackTop,propsElevate) {
                             ? { textDecoration: "none", color: "red" }
                             : { textDecoration: "none", color: "white" }
                         }
-                        //to="/About"
-                        onClick={event =>  window.location.href='/About'}
+                        to="/About"
+                        //onClick={event =>  window.location.href='/About'}
                       >
                         <Button 
                            className="headerNavlink"
@@ -310,8 +311,8 @@ export default function Header(propsBackTop,propsElevate) {
                             ? { textDecoration: "none", color: "red" }
                             : { textDecoration: "none", color: "white" }
                         }
-                        //to="/Experiences"
-                        onClick={event =>  window.location.href='/Experiences'}
+                        to="/Experiences"
+                        //onClick={event =>  window.location.href='/Experiences'}
                       >
                         <Button 
                          className="headerNavlink"
@@ -326,8 +327,8 @@ export default function Header(propsBackTop,propsElevate) {
                             ? { textDecoration: "none", color: "red" }
                             : { textDecoration: "none", color: "white" }
                         }
-                        //to="/Projects"
-                        onClick={event =>  window.location.href='/Projects'}
+                        to="/Projects"
+                        //onClick={event =>  window.location.href='/Projects'}
                       >
                         <Button 
                          className="headerNavlink"
@@ -342,8 +343,8 @@ export default function Header(propsBackTop,propsElevate) {
                             ? { textDecoration: "none", color: "red" }
                             : { textDecoration: "none", color: "white" }
                         }
-                        //to="/Acknowledgment"
-                        onClick={event =>  window.location.href='/Acknowledgment'}
+                        to="/Acknowledgment"
+                        //onClick={event =>  window.location.href='/Acknowledgment'}
                       >
                         <Button
                          className="headerNavlink"
@@ -358,8 +359,8 @@ export default function Header(propsBackTop,propsElevate) {
                             ? { textDecoration: "none", color: "red" }
                             : { textDecoration: "none", color: "white" }
                         }
-                        //to="/Services"
-                        onClick={event =>  window.location.href='/Services'}
+                        to="/Services"
+                        //onClick={event =>  window.location.href='/Services'}
                       >
                         <Button 
                          className="headerNavlink"
@@ -374,8 +375,8 @@ export default function Header(propsBackTop,propsElevate) {
                             ? { textDecoration: "none", color: "red" }
                             : { textDecoration: "none", color: "white" }
                         }
-                        //to="/Contact"
-                        onClick={event =>  window.location.href='/Contact'}
+                        to="/Contact"
+                        //onClick={event =>  window.location.href='/Contact'}
                       >
                         <Button                         
                           className="headerNavlink"
