@@ -1,4 +1,9 @@
 {
+<<<<<<< HEAD
+=======
+  "homepage": "https://zabellecastillo.github.io/Portfolio-Castillo/",
+  "name": "software-rates-app",
+>>>>>>> 2588c86 (Update package.json)
   "homepage": "https://zabellecastillo.github.io/Portfolio-Castillo/",
   "name": "software-rates-app",
   "version": "0.1.0",
