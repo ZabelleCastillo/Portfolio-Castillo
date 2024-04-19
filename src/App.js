@@ -16,24 +16,17 @@ import Services from "./components/Services";
 import Skills from "./components/Skills";
 // import { Canvas} from '@react-three/fiber';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
-<<<<<<< HEAD
 import PageNotFound from "./components/PageNotFound";
-<<<<<<< HEAD
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Box from '@mui/material/Box';
-
-function App() {
-=======
-import { createTheme, ThemeProvider } from '@mui/material/styles';
-import Box from '@mui/material/Box';
 import { motion, useScroll, useSpring } from "framer-motion";
+
 function App() {
 
   const { scrollYProgress } = useScroll({
     offset: ["start start", "end end"],
   });
   /////////////////////////////////////
->>>>>>> 15b792e (404 found page and darkmode module page phase)
   const [mode, setMode] = useState("light");
 
   const darkTheme = createTheme({
@@ -41,10 +34,6 @@ function App() {
       mode: mode,
     },
   });
-=======
-
-function App() {
->>>>>>> e32be18 (dark mode set up and 404 page not found added)
 ////////////////////////////
 const style3 = {
   position: "fixed",
@@ -78,24 +67,17 @@ const style3 = {
               width="180" 
               loading={isLoading} />
         </div>   :
-<<<<<<< HEAD
       //<BrowserRouter>
   <>
-<<<<<<< HEAD
-=======
+
           <motion.div
             className="progress-bar"
             style={{ scaleX: scrollYProgress }} 
             />
->>>>>>> 15b792e (404 found page and darkmode module page phase)
+
   <ThemeProvider theme={darkTheme}>
     <Box bgcolor={"background.default"} color={"text.primary"}>
       <Header mode={mode} setMode={setMode} />
-=======
-      // <BrowserRouter>
-      <>
-       <Header/>
->>>>>>> e32be18 (dark mode set up and 404 page not found added)
            <Routes>
             <Route path="/Skills" element={<Skills />} />
             <Route path="/Contact" element={<Contact />} />
@@ -105,15 +87,8 @@ const style3 = {
             <Route path="/Experiences" element={<Experiences />} />
             <Route path="/About" element={<AboutMe />} />
             <Route exact path="/" element={<Home />} />
-<<<<<<< HEAD
             <Route path="/404" element={<PageNotFound/>} />
-<<<<<<< HEAD
-            <Route path="*" element={<Navigate to="/404" />} />         
-=======
-            <Route path="*" element={<Navigate to="/404" />} />     
->>>>>>> 15b792e (404 found page and darkmode module page phase)
-=======
->>>>>>> e32be18 (dark mode set up and 404 page not found added)
+            <Route path="*" element={<Navigate to="/404" />} />          
           </Routes> 
          
            <div style={style3}>
