@@ -17,10 +17,22 @@ import Skills from "./components/Skills";
 // import { Canvas} from '@react-three/fiber';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import PageNotFound from "./components/PageNotFound";
+<<<<<<< HEAD
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Box from '@mui/material/Box';
 
 function App() {
+=======
+import { createTheme, ThemeProvider } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import { motion, useScroll, useSpring } from "framer-motion";
+function App() {
+
+  const { scrollYProgress } = useScroll({
+    offset: ["start start", "end end"],
+  });
+  /////////////////////////////////////
+>>>>>>> 15b792e (404 found page and darkmode module page phase)
   const [mode, setMode] = useState("light");
 
   const darkTheme = createTheme({
@@ -63,6 +75,13 @@ const style3 = {
         </div>   :
       //<BrowserRouter>
   <>
+<<<<<<< HEAD
+=======
+          <motion.div
+            className="progress-bar"
+            style={{ scaleX: scrollYProgress }} 
+            />
+>>>>>>> 15b792e (404 found page and darkmode module page phase)
   <ThemeProvider theme={darkTheme}>
     <Box bgcolor={"background.default"} color={"text.primary"}>
       <Header mode={mode} setMode={setMode} />
@@ -76,7 +95,11 @@ const style3 = {
             <Route path="/About" element={<AboutMe />} />
             <Route exact path="/" element={<Home />} />
             <Route path="/404" element={<PageNotFound/>} />
+<<<<<<< HEAD
             <Route path="*" element={<Navigate to="/404" />} />         
+=======
+            <Route path="*" element={<Navigate to="/404" />} />     
+>>>>>>> 15b792e (404 found page and darkmode module page phase)
           </Routes> 
          
            <div style={style3}>

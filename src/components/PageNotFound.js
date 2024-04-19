@@ -8,8 +8,8 @@ import { Typography } from '@mui/material';
 import { Helmet } from "react-helmet";
 //////////////////////////////////////////////////
 export default function PageNotFound() {
-    const navigate = useNavigate()
-  const click = () => navigate('/')
+      const navigate = useNavigate()
+    const click = () => navigate('/')
  return (
     <>
         <Helmet>

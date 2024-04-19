@@ -18,9 +18,16 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
 import { styled } from '@mui/system';
 import { NavLink } from "react-router-dom";
+<<<<<<< HEAD
 import { useScroll, motion } from "framer-motion";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { Switch } from "@mui/material";
+=======
+import { motion, useScroll, useSpring } from "framer-motion";
+import { styled } from '@mui/system';
+import Switch from "@mui/material/Switch";
+import FormControlLabel from "@mui/material/FormControlLabel";
+>>>>>>> 15b792e (404 found page and darkmode module page phase)
 ////////////////////////////////////////
 function ScrollTop(propsBackTop) {
   const { children } = propsBackTop;
@@ -125,11 +132,21 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 ////////////////////////////////////////////
 
 export default function Header({propsBackTop,propsElevate, mode, setMode}) {
+<<<<<<< HEAD
 
+=======
+ 
+>>>>>>> 15b792e (404 found page and darkmode module page phase)
   /////////////////////////////////////
-  // const { scrollYProgress } = useScroll();
-  const { scrollYProgress } = useScroll({
-    offset: ["start start", "end end"],
+ 
+ 
+
+   const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    layoutEffect: false,
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001
   });
   ////////////////////////////////////
 
@@ -269,10 +286,7 @@ export default function Header({propsBackTop,propsElevate, mode, setMode}) {
     <>
 
       <CssBaseline />
-      <motion.div
-            className="progress-bar"
-            style={{ scaleX: scrollYProgress }}
-      />
+     <motion.div className="progress-bar" style={{ scaleX }} />
       <ElevationScroll {...propsElevate}>
       <AppBar component="nav">
             <Toolbar style={{
@@ -423,6 +437,7 @@ export default function Header({propsBackTop,propsElevate, mode, setMode}) {
                           sx={{ color: "#fff", "&:hover": { color: "#d9ff00" } }}>
                           Contact
                         </Button>
+<<<<<<< HEAD
                      </NavLink>
                      {/* <Switch
                       checked={mode}
@@ -438,6 +453,14 @@ export default function Header({propsBackTop,propsElevate, mode, setMode}) {
                             style={{ scaleX: scrollYProgress }}
                       />
                   </Box>
+=======
+                     </NavLink>                  
+                     <FormControlLabel
+                      control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+                      onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+                    />                 
+                  </Box>                    
+>>>>>>> 15b792e (404 found page and darkmode module page phase)
             </Toolbar>
       </AppBar>
       </ElevationScroll>

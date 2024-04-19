@@ -9,12 +9,18 @@ import bg7 from '../assets/BG/ag_unsplash.jpg';
 import Paper from '@mui/material/Paper';
 import { styled } from '@mui/material/styles';
 import 'bootstrap/dist/css/bootstrap.css';
-import CircularProgress from '@mui/joy/CircularProgress';
+// import CircularProgress from '@mui/joy/CircularProgress';
+import CircularProgress from '@material-ui/core/CircularProgress';
 import { useCountUp } from 'use-count-up';
 import {Helmet} from "react-helmet";
 import { FunnelChart, Funnel, LabelList, ResponsiveContainer } from "recharts";
 import Tooltip from '@mui/material/Tooltip';
-
+import {
+    CircularProgressbar,
+    CircularProgressbarWithChildren,
+    buildStyles
+  } from "react-circular-progressbar";
+  import "react-circular-progressbar/dist/styles.css";
 ///////////////////////////////////////////////////////
 const background = {
     backgroundImage: `url(${bg7})`,
@@ -72,7 +78,7 @@ const data = [
 //////////////////////////////////////////
 
 //////////////////////////////////////////
-export default function Skills(propsBackTop,propsElevate) {
+export default function Skills() {
 
   /////////////////////////////////////
   const { value: value1 } = useCountUp({
@@ -227,7 +233,7 @@ export default function Skills(propsBackTop,propsElevate) {
     setCheckedSlide(true);
   }, []);
   ////////////////////////////////////
-
+  const percentage = 66;
   ///////////////////////////////////
   return (
     <>
@@ -286,47 +292,34 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                          Adobe Photoshop
                                                          <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value1}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value1}%</Typography>
-                                                            </CircularProgress>  
+                                                         <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value1} text={`${value1}%`}  />
+                                                        </Box>
                                                          </span>
                                                     </Box>                      
-                                                </Typography>  
+                                                </Typography> 
                                                 <hr/>   
-                                                <Typography gutterBottom variant="h6" component="div">     
+                                                 <Typography gutterBottom variant="h6" component="div">     
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                         Adobe Illustrator
                                                         <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value2}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value2}%</Typography>
-                                                            </CircularProgress>  
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value2} text={`${value2}%`}  /> 
+                                                            </Box> 
                                                          </span>
-                                                    </Box>                             
-                                                </Typography>   
+                                                    </Box> 
+                                                    </Typography>                           
+                                                
                                                 <hr/>                      
                                                 <Typography gutterBottom variant="h6" component="div">     
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                          HTML
-                                                        <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value3}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value3}%</Typography>
-                                                            </CircularProgress>  
-                                                         </span>
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value3} text={`${value3}%`}  /> 
+                                                            </Box> 
                                                     </Box>                             
                                                 </Typography>   
                                                 <hr/> 
@@ -334,14 +327,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                          CSS
                                                         <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value4}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value4}%</Typography>
-                                                            </CircularProgress>  
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value4} text={`${value4}%`}  /> 
+                                                            </Box>   
                                                          </span>
                                                     </Box>                             
                                                 </Typography> 
@@ -350,14 +339,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                          Javascript
                                                         <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value5}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value5}%</Typography>
-                                                            </CircularProgress>  
+                                                           <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value5} text={`${value5}%`}  /> 
+                                                            </Box>  
                                                          </span>
                                                     </Box>                             
                                                 </Typography> 
@@ -366,14 +351,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                         PHP 
                                                         <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value6}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value6}%</Typography>
-                                                            </CircularProgress>  
+                                                        <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value6} text={`${value6}%`}  /> 
+                                                            </Box> 
                                                          </span>
                                                     </Box>                             
                                                 </Typography> 
@@ -382,14 +363,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                         Material UI
                                                         <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value7}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value7}%</Typography>
-                                                            </CircularProgress>  
+                                                        <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value7} text={`${value7}%`}  /> 
+                                                            </Box>   
                                                          </span>
                                                     </Box>                             
                                                 </Typography> 
@@ -398,14 +375,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                         ReactJS
                                                         <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value8}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value8}%</Typography>
-                                                            </CircularProgress>  
+                                                        <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value8} text={`${value8}%`}  /> 
+                                                            </Box> 
                                                          </span>
                                                     </Box>                             
                                                 </Typography>
@@ -414,14 +387,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                         VB.net
                                                         <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value9}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value9}%</Typography>
-                                                            </CircularProgress>  
+                                                        <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value9} text={`${value9}%`}  /> 
+                                                            </Box>  
                                                          </span>
                                                     </Box>                             
                                                 </Typography>
@@ -430,17 +399,14 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                         Zentao Tool
                                                         <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value10}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value10}%</Typography>
-                                                            </CircularProgress>  
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value10} text={`${value10}%`}  /> 
+                                                            </Box>  
                                                          </span>
                                                     </Box>                             
                                                 </Typography>
+                                                <hr/>
                                         </div>
                                     </Item2>
                               </Grid>
@@ -463,14 +429,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                          Selenium using Java
                                                          <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value11}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value11}%</Typography>
-                                                            </CircularProgress>  
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value11} text={`${value11}%`}  /> 
+                                                            </Box> 
                                                          </span>
                                                     </Box>                             
                                                 </Typography>   
@@ -479,14 +441,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                     IDE Selenium
                                                     <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value12}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value12}%</Typography>
-                                                            </CircularProgress>  
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value12} text={`${value12}%`}  /> 
+                                                            </Box> 
                                                          </span>
                                                     </Box>                             
                                                 </Typography>  
@@ -495,14 +453,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                     Postman
                                                     <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value13}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value13}%</Typography>
-                                                            </CircularProgress>  
+                                                    <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value13} text={`${value13}%`}  /> 
+                                                            </Box>  
                                                          </span>
                                                     </Box>                             
                                                 </Typography>   
@@ -511,14 +465,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                     Insomnia
                                                     <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value14}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value14}%</Typography>
-                                                            </CircularProgress>  
+                                                    <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value14} text={`${value14}%`}  /> 
+                                                            </Box> 
                                                          </span>
                                                     </Box>                             
                                                 </Typography>  
@@ -527,14 +477,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                     Node JS
                                                     <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value15}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value15}%</Typography>
-                                                            </CircularProgress>  
+                                                    <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value15} text={`${value15}%`}  /> 
+                                                            </Box> 
                                                          </span>
                                                     </Box>                             
                                                 </Typography>  
@@ -543,14 +489,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                     XAMPP
                                                     <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value16}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value16}%</Typography>
-                                                            </CircularProgress>  
+                                                    <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value16} text={`${value16}%`}  /> 
+                                                            </Box>  
                                                          </span>
                                                     </Box>                             
                                                 </Typography>  
@@ -559,14 +501,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                     C#
                                                     <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value17}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value17}%</Typography>
-                                                            </CircularProgress>  
+                                                    <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value17} text={`${value17}%`}  /> 
+                                                            </Box>  
                                                          </span>
                                                     </Box>                             
                                                 </Typography>   
@@ -575,14 +513,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                     SQL Express 
                                                     <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value18}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value18}%</Typography>
-                                                            </CircularProgress>  
+                                                    <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value18} text={`${value18}%`}  /> 
+                                                            </Box>
                                                          </span>
                                                     </Box>                             
                                                 </Typography> 
@@ -591,14 +525,10 @@ export default function Skills(propsBackTop,propsElevate) {
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                     Flash
                                                     <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value19}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value19}%</Typography>
-                                                            </CircularProgress>  
+                                                    <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value19} text={`${value19}%`}  /> 
+                                                            </Box> 
                                                          </span>
                                                     </Box>                             
                                                 </Typography>  
@@ -606,18 +536,15 @@ export default function Skills(propsBackTop,propsElevate) {
                                                 <Typography gutterBottom variant="h6" component="div">     
                                                     <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
                                                     Vegas Pro 
-                                                    <span>
-                                                            <CircularProgress 
-                                                                color="success" size="md" determinate value={value20}
-                                                                style={{
-                                                                float: "right"}}>
-                                                                <Typography
-                                                                    sx={{ fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E'}}
-                                                                >{value20}%</Typography>
-                                                            </CircularProgress>  
-                                                         </span>
+                                                        <span>
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value20} text={`${value20}%`}  /> 
+                                                            </Box> 
+                                                        </span>
                                                     </Box>                             
-                                                </Typography>                  
+                                                </Typography> 
+                                                <hr />                 
                                             </div>
                                     </Item2>
                                 </Grid>
