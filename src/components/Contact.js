@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -26,7 +26,6 @@ import * as Yup from "yup";
 import MuiAlert from "@mui/material/Alert";
 import emailjs from '@emailjs/browser';
 import {Helmet} from "react-helmet";
-
 
 
 const background = {
@@ -85,7 +84,7 @@ const ContactSchema = Yup.object().shape({
 //////////////////////////////////////////////////
 export default function Contact(propsBackTop,propsElevate) {
   //////////////////////////////////////
-  
+
   /////////////////////////////////////
   const [checkedSlide, setCheckedSlide] = useState(false);
   useEffect(() => {
@@ -109,7 +108,7 @@ export default function Contact(propsBackTop,propsElevate) {
       try {
         emailjs
           .send(
-            process.env.REACT_APP_EMAILJS_SERVICE_ID,
+           process.env.REACT_APP_EMAILJS_SERVICE_ID,
             process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
             data,
             process.env.REACT_APP_EMAILJS_USER_ID

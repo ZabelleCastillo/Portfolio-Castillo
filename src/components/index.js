@@ -8,3 +8,4 @@ export { default as Contact } from "./Contact.js";
 export { default as Footer } from "./Footer.js";
 export { default as Header } from "./Header.js";
 export { default as Skills } from "./Skills.js";
+export {default as PageNotFound} from "./PageNotFound.js";
