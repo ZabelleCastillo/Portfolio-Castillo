@@ -211,8 +211,8 @@ export default function Home(propsBackTop,propsElevate) {
                                                         padding: "8px 16px",
                                                         fontSize: "13px",
                                                       }} 
-                                                        href={require("../assets/PDF/STE_Jess_Castillo.pdf")} 
-                                                      download="CV"
+                                                        href={require("../assets/PDF/STE_JBC.pdf")} 
+                                                      download="CV_JBC"
                                                       variant="contained"> Download CV </Button> 
                                               </Grid>     
 

@@ -343,8 +343,9 @@ export default function Experiences() {
                               </Typography>
                               <Typography>
                                 <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
-                                  Job responsibilities: My duties entail accurately invoicing the data into their system and systematically storing 
-                                  it within the database.
+                                  Job responsibilities: My responsibilities include meticulously invoicing data into the system, 
+                                  systematically storing it within the database, and conducting manual testing of the software to 
+                                  identify any potential bugs or defects.
                                 </Box>
                               </Typography>
                             <hr />

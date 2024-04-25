@@ -16,25 +16,11 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Button from '@mui/material/Button';
-<<<<<<< HEAD
-import { styled } from '@mui/system';
-import { NavLink } from "react-router-dom";
-<<<<<<< HEAD
-import { useScroll, motion } from "framer-motion";
 import FormControlLabel from "@mui/material/FormControlLabel";
 import { Switch } from "@mui/material";
-=======
 import { motion, useScroll, useSpring } from "framer-motion";
 import { styled } from '@mui/system';
-import Switch from "@mui/material/Switch";
-import FormControlLabel from "@mui/material/FormControlLabel";
->>>>>>> 15b792e (404 found page and darkmode module page phase)
-=======
-import { styled } from '@mui/system';
 import { NavLink } from "react-router-dom";
-import PhoneIcon from "@mui/icons-material/Phone";
-import { useScroll, motion } from "framer-motion";
->>>>>>> e32be18 (dark mode set up and 404 page not found added)
 ////////////////////////////////////////
 function ScrollTop(propsBackTop) {
   const { children } = propsBackTop;
@@ -138,26 +124,15 @@ const MaterialUISwitch = styled(Switch)(({ theme }) => ({
 }));
 ////////////////////////////////////////////
 
-<<<<<<< HEAD
 export default function Header({propsBackTop,propsElevate, mode, setMode}) {
-<<<<<<< HEAD
 
-=======
- 
->>>>>>> 15b792e (404 found page and darkmode module page phase)
-=======
-export default function Header(propsBackTop,propsElevate) {
   const [activeButton, setActiveButton] = useState("");
  
   const handleClick = (event) => {
     setActiveButton(event.target.id);
   }
->>>>>>> e32be18 (dark mode set up and 404 page not found added)
   /////////////////////////////////////
- 
- 
-
-   const { scrollYProgress } = useScroll();
+  const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, {
     layoutEffect: false,
     stiffness: 100,
@@ -453,8 +428,6 @@ export default function Header(propsBackTop,propsElevate) {
                           sx={{ color: "#fff", "&:hover": { color: "#d9ff00" } }}>
                           Contact
                         </Button>
-<<<<<<< HEAD
-<<<<<<< HEAD
                      </NavLink>
                      {/* <Switch
                       checked={mode}
@@ -464,27 +437,11 @@ export default function Header(propsBackTop,propsElevate) {
                       control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
                       onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
                     />
-                    
-                            <motion.div
-=======
-                     </NavLink>
-                     <motion.div
->>>>>>> e32be18 (dark mode set up and 404 page not found added)
-                            className="progress-bar"
-                            style={{ scaleX: scrollYProgress }}
-                      />
                   </Box>
-<<<<<<< HEAD
-=======
-                     </NavLink>                  
-                     <FormControlLabel
-                      control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
-                      onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
-                    />                 
-                  </Box>                    
->>>>>>> 15b792e (404 found page and darkmode module page phase)
-=======
->>>>>>> e32be18 (dark mode set up and 404 page not found added)
+                      <motion.div
+                        className="progress-bar"
+                        style={{ scaleX: scrollYProgress }}
+                      />
             </Toolbar>
       </AppBar>
       </ElevationScroll>

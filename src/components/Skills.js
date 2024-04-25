@@ -233,7 +233,7 @@ export default function Skills() {
     setCheckedSlide(true);
   }, []);
   ////////////////////////////////////
-  const percentage = 66;
+ 
   ///////////////////////////////////
   return (
     <>

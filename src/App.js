@@ -38,7 +38,9 @@ function App() {
 const style3 = {
   position: "fixed",
   bottom: "50px",
-  left: "15px",
+  right: "unset !important",
+  left: "15px !important",
+  //left: "15px",
   display: "flex",
   justifyContent: "flex-end",
   alignItems: "flex-end",
@@ -93,7 +95,7 @@ const style3 = {
          
            <div style={style3}>
             <MessengerCustomerChat
-              pageId="61558505399351"
+              pageId="264391036764466"
               appId="1860301621137741" 
               themeColor={'#002E4E'}
               style={{width:"20px"}} 
