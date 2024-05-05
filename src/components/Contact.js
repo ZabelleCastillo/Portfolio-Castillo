@@ -188,13 +188,13 @@ export default function Contact(propsBackTop,propsElevate) {
                                marginTop= "10%">
                                   <div>
                                       <Typography  variant="h3">  
-                                        <Box sx={{ fontWeight: 'bold', fontSize: 26, m: 0, color:'#002E4E'}}>
+                                        <Box sx={{ fontWeight: 'bold', fontSize: 26, m: 0, color:'body1'}}>
                                           Get in touch
                                         </Box>  
                                       </Typography>
 
                                       <Typography>
-                                        <Box sx={{ fontWeight: 'none', fontSize: 16, m: 0, color:'#002E4E', letterSpacing: 1, fontFamily: 'Monospace' }}>
+                                        <Box sx={{ fontWeight: 'none', fontSize: 16, m: 0, color:'primary', letterSpacing: 1, fontFamily: 'Monospace' }}>
                                           Let us collaborate to construct a distinctive entity.
                                         </Box>
                                       </Typography>
@@ -209,7 +209,7 @@ export default function Contact(propsBackTop,propsElevate) {
                                             // marginLeft= "8px" 
                                             // color="#0909F4"
                                             className="typographyText"
-                                            color="#002E4E"
+                                            color="primary"
                                             sx={{ "&:hover": { color: "#d9ff00" } }} 
                                       >
                                             {<PhoneIcon/>} +639-39-716-9774
@@ -224,7 +224,7 @@ export default function Contact(propsBackTop,propsElevate) {
                                         //     color: "#0909F4",                  
                                         // }}
                                         className="typographyText"
-                                        color="#002E4E"
+                                        color="primary"
                                             sx={{ "&:hover": { color: "#d9ff00" } }} 
                                       >
                                             {<EmailIcon/>} jessabellecastillo1993@yahoo.com
@@ -232,7 +232,7 @@ export default function Contact(propsBackTop,propsElevate) {
                                     <br />
                                     <Typography
                                         className="typographyText"
-                                        color="#002E4E"
+                                        color="primary"
                                         sx={{ "&:hover": { color: "#d9ff00" } }} 
                                       >
                                              {<PlaceIcon/>} Minglanilla, Cebu, Philippines
@@ -404,7 +404,7 @@ export default function Contact(propsBackTop,propsElevate) {
                                         />
                                         <br/> <br />
                                         <center>
-                                          <Button   sx={{ "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
+                                          <Button   sx={{ color:"#fff" , "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                                type="submit"
                                                 style={{
                                                   borderRadius: 35,

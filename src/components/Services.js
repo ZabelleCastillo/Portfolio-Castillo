@@ -44,7 +44,7 @@ const Item2 = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'justify',
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.body1,
   }));
 
 export default function Services() {
@@ -104,10 +104,10 @@ export default function Services() {
                               </Box>
                             </Typography>
                           <br/>
-                            <Button   sx={{ "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
+                            <Button   sx={{ color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                   onClick={()=> navigate("/Contact")}
-                                // onClick={event =>  window.location.href='/Contact'}
-                                  style={{
+                                //onClick={event =>  window.location.href='/Contact'}  
+                                  style={{                                    
                                      borderRadius: 35,
                                      backgroundColor: "#002E4E",
                                     padding: "8px 16px",
@@ -141,7 +141,7 @@ export default function Services() {
                             <Item2>
                               <div>                           
                                   <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                         Website Design 
                                         <span>
                                             <img src={monitor} alt='Website Design' 
@@ -155,7 +155,7 @@ export default function Services() {
                                         </span> 
                                     </Box>                             
                                   </Typography>
-                                  <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0, color:'#002E4E'}}>
+                                  <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0}}>
                                     ESTIMATED RANGE ($ per hour) <br/> 
                                     $8 to $15
                                   </Typography>                                 
@@ -170,8 +170,8 @@ export default function Services() {
                         }}>
                             <Item2>
                             <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
-                                        Front-end Coding 
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
+                                        Front-end Coding
                                         <span>
                                               <img src={css} alt='Front-end Coding' 
                                                             style={{
@@ -184,7 +184,7 @@ export default function Services() {
                                           </span> 
                                     </Box>
                             </Typography>
-                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0, color:'#002E4E'}}>
+                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0}}>
                                 ESTIMATED RANGE ($ per hour) <br/> 
                                 $10 to $18
                             </Typography>          
@@ -197,7 +197,7 @@ export default function Services() {
                         }}>
                             <Item2>
                             <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                       Back-end Coding 
                                     <span>
                                           <img src={html} alt='Back-end Coding' 
@@ -211,7 +211,7 @@ export default function Services() {
                                       </span>    
                                     </Box>
                             </Typography>
-                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0, color:'#002E4E'}}>
+                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0}}>
                               ESTIMATED RANGE ($ per hour) <br/> 
                               $12 to $20
                             </Typography>
@@ -224,7 +224,7 @@ export default function Services() {
                         }}>
                             <Item2>                        
                             <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                       Full Stack 
                                     <span>
                                           <img src={browser} alt='Full Stack ' 
@@ -238,7 +238,7 @@ export default function Services() {
                                       </span>    
                                     </Box>
                             </Typography>
-                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0, color:'#002E4E'}}>
+                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0}}>
                               ESTIMATED RANGE ($ per hour) <br/>
                               $14 to $22
                             </Typography>
@@ -251,7 +251,7 @@ export default function Services() {
                         }}>
                       <Item2>
                         <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                     E-commerce Setup 
                                   <span>
                                   <img src={responsive} alt='E-commerce Setup ' 
@@ -265,7 +265,7 @@ export default function Services() {
                                   </span> 
                                     </Box>
                             </Typography>
-                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0, color:'#002E4E'}}>
+                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0}}>
                                 ESTIMATED RANGE ($ per hour) <br/>
                                 $18 to $25
                             </Typography>
@@ -278,7 +278,7 @@ export default function Services() {
                         }}>
                       <Item2>
                         <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                     Website Maintenance 
                                   <span>
                                             <img src={settings} alt='Website Maintenance ' 
@@ -292,7 +292,7 @@ export default function Services() {
                                     </span>  
                                     </Box>
                             </Typography>
-                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0, color:'#002E4E'}}>
+                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0}}>
                                 ESTIMATED RANGE ($ per hour) <br/> 
                                 $7 to $12
                             </Typography>
@@ -306,7 +306,7 @@ export default function Services() {
                   >
                       <Item2>
                             <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                       Custom Features 
                                       <span>
                                                 <img src={books} alt='Custom Features' 
@@ -320,7 +320,7 @@ export default function Services() {
                                       </span> 
                                     </Box>
                             </Typography>
-                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0, color:'#002E4E'}}>
+                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0}}>
                                 ESTIMATED RANGE ($ per hour) <br/> 
                                 $15 to $22
                             </Typography>
@@ -333,7 +333,7 @@ export default function Services() {
                         }}>                  
                       <Item2>
                         <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                     SEO Optimization 
                                     <span>
                                               <img src={search} alt='SEO Optimization ' 
@@ -347,7 +347,7 @@ export default function Services() {
                                     </span> 
                                     </Box>
                             </Typography>
-                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0, color:'#002E4E'}}>
+                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0}}>
                             ESTIMATED RANGE ($ per hour) <br/>
                             $10 to $18
                             </Typography>
@@ -359,8 +359,8 @@ export default function Services() {
                           width:"100%"
                         }}>
                     <Item2>
-                      <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                              <Typography color='body1' gutterBottom variant="h6" component="div">     
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                     Consultation 
                                     <span>
                                                 <img src={bubblechat} alt='Consultation' 
@@ -374,7 +374,7 @@ export default function Services() {
                                       </span> 
                                     </Box>
                             </Typography>
-                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0, color:'#002E4E'}}>
+                            <Typography sx={{ fontWeight: 'none', fontSize: '0.85em', m: 0}}>
                                 ESTIMATED RANGE ($ per hour) <br/>
                                 $8 to $15
                             </Typography>

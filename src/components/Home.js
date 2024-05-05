@@ -131,8 +131,9 @@ export default function Home(propsBackTop,propsElevate) {
                                                   animate={{opacity:1}}
                                                   transition={{duration: 0.75, ease: "easeOut"}}
                                                 >
-                                                <Typography style={{ fontSize: "18px", marginLeft:"25px"  }} >                     
+                                                <Typography   style={{ fontSize: "18px", marginLeft:"25px"  }} >                     
                                                         <span
+                                                        
                                                           style={{
                                                             fontWeight: "bold",
                                                             fontSize: "30px",
@@ -160,6 +161,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                 <Button className={classes.button} 
                                                 onClick={()=> navigate("/Contact")}
                                                 //onClick={event =>  window.location.href='/Contact'}
+                                                sx={{ color: "#fff" }}
                                                       style={{
                                                         borderRadius: 35,
                                                         backgroundColor: "#002E4E",
@@ -172,6 +174,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                 {/* <NavLink to="/Services" > */}
                                               <Button className={classes.button} 
                                               onClick={()=> navigate("/Services")}
+                                               sx={{ color: "#fff" }}
                                                   style={{
                                                     borderRadius: 35,
                                                     backgroundColor: "#002E4E",
@@ -194,6 +197,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                 }}
                                                 //onClick={event =>  window.location.href='/Projects'}
                                                 //onClick={()=> navigate("/Projects")}
+                                                sx={{ color: "#fff" }}
                                               variant="contained">Projects
                                               </Button>
                                               {/* </NavLink> */}
@@ -205,6 +209,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                     justifyContent= "center"
                                               >
                                                   <Button className={classes.button}   
+                                                   sx={{ color: "#fff" }}
                                                       style={{
                                                         borderRadius: 35,
                                                         backgroundColor: "#002E4E",

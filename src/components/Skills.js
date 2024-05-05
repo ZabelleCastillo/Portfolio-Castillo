@@ -45,7 +45,7 @@ const Item2 = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'justify',
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.body1,
   }));
 ///////////////////////////////////////////
 const data = [
@@ -288,8 +288,8 @@ export default function Skills() {
                                     }}>
                                     <Item2>
                                         <div>    
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                          Adobe Photoshop
                                                          <span>
                                                          <Box 
@@ -300,8 +300,8 @@ export default function Skills() {
                                                     </Box>                      
                                                 </Typography> 
                                                 <hr/>   
-                                                 <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                 <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                         Adobe Illustrator
                                                         <span>
                                                             <Box 
@@ -313,8 +313,8 @@ export default function Skills() {
                                                     </Typography>                           
                                                 
                                                 <hr/>                      
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                          HTML
                                                             <Box 
                                                             style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
@@ -323,8 +323,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>   
                                                 <hr/> 
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                          CSS
                                                         <span>
                                                             <Box 
@@ -335,8 +335,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography> 
                                                 <hr/> 
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                          Javascript
                                                         <span>
                                                            <Box 
@@ -347,8 +347,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography> 
                                                 <hr/> 
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                         PHP 
                                                         <span>
                                                         <Box 
@@ -359,8 +359,9 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography> 
                                                 <hr/> 
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
+                                                      {/* , color:'#002E4E' */}
                                                         Material UI
                                                         <span>
                                                         <Box 
@@ -371,8 +372,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography> 
                                                 <hr/> 
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                         ReactJS
                                                         <span>
                                                         <Box 
@@ -383,8 +384,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>
                                                 <hr/> 
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                         VB.net
                                                         <span>
                                                         <Box 
@@ -395,8 +396,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>
                                                 <hr/> 
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                         Zentao Tool
                                                         <span>
                                                             <Box 
@@ -425,8 +426,8 @@ export default function Skills() {
                                         }}>
                                         <Item2>
                                             <div>                           
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                          Selenium using Java
                                                          <span>
                                                             <Box 
@@ -437,8 +438,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>   
                                                 <hr/>  
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                     IDE Selenium
                                                     <span>
                                                             <Box 
@@ -449,8 +450,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>  
                                                 <hr />
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                     Postman
                                                     <span>
                                                     <Box 
@@ -461,8 +462,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>   
                                                 <hr />
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                     Insomnia
                                                     <span>
                                                     <Box 
@@ -473,8 +474,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>  
                                                 <hr />
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                     Node JS
                                                     <span>
                                                     <Box 
@@ -485,8 +486,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>  
                                                 <hr />
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                     XAMPP
                                                     <span>
                                                     <Box 
@@ -497,8 +498,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>  
                                                 <hr />
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1"  gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                     C#
                                                     <span>
                                                     <Box 
@@ -509,8 +510,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>   
                                                 <hr />
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                     SQL Express 
                                                     <span>
                                                     <Box 
@@ -521,8 +522,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography> 
                                                 <hr />
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                     Flash
                                                     <span>
                                                     <Box 
@@ -533,8 +534,8 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>  
                                                 <hr />
-                                                <Typography gutterBottom variant="h6" component="div">     
-                                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                     Vegas Pro 
                                                         <span>
                                                             <Box 
@@ -552,7 +553,7 @@ export default function Skills() {
                     </Slide>                         
                 </Grid>
                 <br/> 
-                    <center>               
+                    <center>           
                         <ResponsiveContainer width="95%" height={400}>
                             <FunnelChart>
                                 <Tooltip cursor={false} />
@@ -561,10 +562,10 @@ export default function Skills() {
                                         data={data}
                                         isAnimationActive
                                     >
-                                        <LabelList position="right" fill="#000" stroke="none" dataKey="name" />
+                                        <LabelList position="right" fill="#16E42C" stroke="none" dataKey="name" />
                                     </Funnel>
                             </FunnelChart> 
-                        </ResponsiveContainer>                                 
+                        </ResponsiveContainer>                                
                     </center> 
             </Box>    
         </Container>
