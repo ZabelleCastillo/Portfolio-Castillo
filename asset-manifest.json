@@ -1,8 +1,10 @@
 {
   "files": {
     "main.css": "/Portfolio-Castillo/static/css/main.7ca201fe.css",
-    "main.js": "/Portfolio-Castillo/static/js/main.e1624397.js",
-    "static/js/453.a896885d.chunk.js": "/Portfolio-Castillo/static/js/453.a896885d.chunk.js",
+    "main.js": "/Portfolio-Castillo/static/js/main.a3200095.js",
+    "static/js/213.043ab5a4.chunk.js": "/Portfolio-Castillo/static/js/213.043ab5a4.chunk.js",
+    "static/js/553.be81d643.chunk.js": "/Portfolio-Castillo/static/js/553.be81d643.chunk.js",
+    "static/js/453.16342fe2.chunk.js": "/Portfolio-Castillo/static/js/453.16342fe2.chunk.js",
     "static/media/SchoolManagement.jpg": "/Portfolio-Castillo/static/media/SchoolManagement.507c721509a18e29c5b9.jpg",
     "static/media/MotorcycleInventory.jpg": "/Portfolio-Castillo/static/media/MotorcycleInventory.9b29119d0c3b6e13f7a3.jpg",
     "static/media/js_unsplash.jpg": "/Portfolio-Castillo/static/media/js_unsplash.73dfb6ff37786f8ae924.jpg",
@@ -12,7 +14,7 @@
     "static/media/SocialMediaImage.jpg": "/Portfolio-Castillo/static/media/SocialMediaImage.3396b92f6b55db74eb01.jpg",
     "static/media/coding.jpg": "/Portfolio-Castillo/static/media/coding.0b11fddde5c871dc9191.jpg",
     "static/media/HotelReservation.jpg": "/Portfolio-Castillo/static/media/HotelReservation.991caa0a6301b45ddd48.jpg",
-    "static/media/JB.png": "/Portfolio-Castillo/static/media/JB.a9f44a179cc259706be1.png",
+    "static/media/JB.png": "/Portfolio-Castillo/static/media/JB.0f3c591e04188435f3fe.png",
     "static/media/ag_unsplash.jpg": "/Portfolio-Castillo/static/media/ag_unsplash.63a57637c6ec9c7b6e30.jpg",
     "static/media/cg_unsplash.jpg": "/Portfolio-Castillo/static/media/cg_unsplash.d1ff635a064f70e25516.jpg",
     "static/media/FoodReservation.jpg": "/Portfolio-Castillo/static/media/FoodReservation.1045cffcac17140ba3aa.jpg",
@@ -40,11 +42,13 @@
     "static/media/automationtesting.jpg": "/Portfolio-Castillo/static/media/automationtesting.7f8d0e0d62ec34c3b97f.jpg",
     "index.html": "/Portfolio-Castillo/index.html",
     "main.7ca201fe.css.map": "/Portfolio-Castillo/static/css/main.7ca201fe.css.map",
-    "main.e1624397.js.map": "/Portfolio-Castillo/static/js/main.e1624397.js.map",
-    "453.a896885d.chunk.js.map": "/Portfolio-Castillo/static/js/453.a896885d.chunk.js.map"
+    "main.a3200095.js.map": "/Portfolio-Castillo/static/js/main.a3200095.js.map",
+    "213.043ab5a4.chunk.js.map": "/Portfolio-Castillo/static/js/213.043ab5a4.chunk.js.map",
+    "553.be81d643.chunk.js.map": "/Portfolio-Castillo/static/js/553.be81d643.chunk.js.map",
+    "453.16342fe2.chunk.js.map": "/Portfolio-Castillo/static/js/453.16342fe2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ca201fe.css",
-    "static/js/main.e1624397.js"
+    "static/js/main.a3200095.js"
   ]
 }
