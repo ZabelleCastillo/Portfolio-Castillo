@@ -216,8 +216,8 @@ export default function AboutMe() {
                 >  
                       <Grid item xs={12}>
                           <Item2>
-                              <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                              <Typography color="primary">
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                   "Hello, I'm Jessa Belle, known as either Zabelle, Jess or Belle. Located at Minglanilla, 
                                   Cebu City 6064. As a Software Test Engineer, my duties encompass utilizing Zentao 
                                   as a project management tool for reporting bugs, underscoring the pivotal role I play 
@@ -225,8 +225,8 @@ export default function AboutMe() {
                                 </Box>
                               </Typography>
                             <br />
-                              <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                              <Typography color="primary">
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                     This involves hands-on interaction with the software and the execution of test scripts 
                                     to systematically identify and address bugs and errors, ensuring the software operates 
                                     as intended. Additionally, I am actively engaged in advancing my skills by practicing 
@@ -234,8 +234,8 @@ export default function AboutMe() {
                                 </Box>                               
                               </Typography>
                               <br />
-                              <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                              <Typography color="primary">
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                   While my past involvement in web design and coding was not extensively pursued, I still retain 
                                   a passion for these areas. As a software test engineer, this background proves advantageous as 
                                   it enables me to proficiently evaluate and confirm the responsiveness of front-end user interfaces. 
@@ -244,8 +244,8 @@ export default function AboutMe() {
                                 </Box>  
                               </Typography>
                               <br />
-                              <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                              <Typography  color="primary">
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                     Beyond my role as a Software Test Engineer, I find joy in various hobbies such as 
                                     working out, hiking, and indulging in motivational books. I'm passionate about sports 
                                     like basketball, badminton, jogging, lawn tennis, and billiards, and I also enjoy 
@@ -253,8 +253,8 @@ export default function AboutMe() {
                                 </Box>                 
                               </Typography>
                               <br />
-                              <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                              <Typography  color="primary">
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                   With a diverse professional background, I've worked as an Outsourcing Agent, been 
                                   self-employed with Sogod BellyChon, and held roles such as Company Secretary, Call 
                                   Analyst, Intern, and Sales Associate, contributing to a rich and dynamic skill set."

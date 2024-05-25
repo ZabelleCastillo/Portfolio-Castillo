@@ -5,7 +5,7 @@ import { Route, Routes, Navigate, useLocation } from "react-router-dom";
 import {useState, useEffect} from 'react';
 import React from 'react';
 import './App.css';
-// import BounceLoader from "react-spinners/BounceLoader";
+//import BounceLoader from "react-spinners/BounceLoader";
 import { CirclesWithBar } from 'react-loader-spinner';
 import AboutMe from "./components/AboutMe";
 import Experiences from "./components/Experiences";
@@ -14,7 +14,7 @@ import Acknowledgment from "./components/Acknowledgment";
 import Contact from "./components/Contact";
 import Services from "./components/Services";
 import Skills from "./components/Skills";
-// import { Canvas} from '@react-three/fiber';
+//import { Canvas} from '@react-three/fiber';
 import MessengerCustomerChat from 'react-messenger-customer-chat';
 import PageNotFound from "./components/PageNotFound";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
@@ -32,6 +32,13 @@ function App() {
   const darkTheme = createTheme({
     palette: {
       mode: mode,
+      // color: 'white',
+      // primary: {
+      //   main: '#FFFFFF',
+      // },
+      // secondary: {
+      //   main: '#FFFFFF',
+      // },
     },
   });
 ////////////////////////////

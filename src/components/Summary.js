@@ -59,13 +59,14 @@ export default function Summary() {
                         sx={{ zIndex:'-2'}}
                         />
                         <CardContent>
-                        <Typography gutterBottom variant="h6" component="div">     
-                                <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                        <Typography  color="body1" gutterBottom variant="h6" component="div">     
+                                <Box sx={{ fontWeight: 'bold', m: 0}}>
                                     A self-introduction
                                 </Box>
                         </Typography>
-                        <Typography>
-                            <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                        <Typography color="primary"> 
+                        {/* ,color:'#002E4E' */}
+                            <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                 "I've worked hard my education and now I'm ready to apply my knowledge 
                                 into practice."
                             </Box>
@@ -78,7 +79,8 @@ export default function Summary() {
                                           <Button   
                                             onClick={()=> navigate("/About")}
                                              //onClick={event =>  window.location.href='/About'}
-                                            sx={{ "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
+                                         
+                                            sx={{color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                                 style={{
                                                   borderRadius: 35,
                                                   backgroundColor: "#002E4E",
@@ -105,14 +107,14 @@ export default function Summary() {
                             alt="Belle"
                             />
                             <CardContent>
-                            <Typography gutterBottom variant="h6" component="div">
-                            <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                            <Typography color="body1" gutterBottom variant="h6" component="div">
+                            <Box sx={{ fontWeight: 'bold', m: 0}}>
                                 Why I love coding?
                             </Box>
                             </Typography>
                             
-                            <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                            <Typography color="primary">
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0}}>
                                     "It can sharpen your mind, rewire your brain, provide people with 
                                     great software."
                                  </Box>
@@ -124,7 +126,7 @@ export default function Summary() {
                             <Button  size="small" color="primary"
                                     onClick={()=> navigate("/Experiences")}
                                     //onClick={event =>  window.location.href='/Experiences'}
-                                    sx={{ "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
+                                    sx={{color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                     style={{
                                         borderRadius: 35,
                                         backgroundColor: "#002E4E",
@@ -151,13 +153,13 @@ export default function Summary() {
                             alt="Belle"
                             />
                             <CardContent>
-                            <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                            <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                     Why do I like Software testing?
                                     </Box>
                             </Typography>
-                            <Typography>
-                            <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                            <Typography color="primary">
+                            <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                 "Due to its inherent appeal in ensuring the robustness 
                                 of software applications."
                             </Box>
@@ -169,7 +171,7 @@ export default function Summary() {
                             <Button  size="small" color="primary"
                                     onClick={()=> navigate("/Projects")}
                                     //onClick={event =>  window.location.href='/Projects'}
-                                    sx={{ "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
+                                    sx={{color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                     style={{
                                         borderRadius: 35,
                                         backgroundColor: "#002E4E",

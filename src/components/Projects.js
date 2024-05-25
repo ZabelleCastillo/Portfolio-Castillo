@@ -128,12 +128,12 @@ export default function Projects() {
                         />
                         <CardContent>
                         <Typography gutterBottom variant="h6" component="div">
-                            <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                            <Box sx={{ fontWeight: 'bold', m: 0, color:'body1'}}>
                             Hotel Reservation
                             </Box>  
                         </Typography>
                         <Typography>
-                            <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                            <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'primary' }}>
                                 "Developed the Hotel Reservation System for Syshore Hotel, employing HTML and CSS for the 
                                 front-end and PHP for the back-end."
                             </Box>
@@ -141,9 +141,7 @@ export default function Projects() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                         <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E', textDecoration: 'none' }}>
-                            &nbsp; Photo by &nbsp; <a href="https://unsplash.com/@kellysikkema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"> Kelly Sikkema </a>
-                         </Box>
+                       &nbsp; Photo by &nbsp; <a href="https://unsplash.com/@kellysikkema?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash"> Kelly Sikkema </a>                    
                     </CardActions>
                     </Card>
             </Grid>
@@ -160,12 +158,12 @@ export default function Projects() {
                             />
                             <CardContent>
                             <Typography gutterBottom variant="h6" component="div">
-                                <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                <Box sx={{ fontWeight: 'bold', m: 0, color:'body1'}}>
                                     Motorcycle Inventory System
                                 </Box>  
                             </Typography>
                             <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'primary' }}>
                                     "Contributed to the Motorcycle Inventory System, utilizing Visual Basic.net for the windows application and C# for the back-end."
                                 </Box>
                             </Typography>
@@ -189,12 +187,12 @@ export default function Projects() {
                             />
                             <CardContent>
                             <Typography gutterBottom variant="h6" component="div">
-                                <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                <Box sx={{ fontWeight: 'bold', m: 0, color:'body1'}}>
                                     School Management System
                                 </Box>  
                             </Typography>
                             <Typography>
-                                  <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                  <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'primary' }}>
                                   "Development of a School Management System for SNHS, integrating ReactJS 
                                    for the front-end and C# for the back-end."
                                   </Box>
@@ -223,12 +221,12 @@ export default function Projects() {
                             />
                             <CardContent>
                             <Typography gutterBottom variant="h6" component="div">
-                                <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                <Box sx={{ fontWeight: 'bold', m: 0, color:'body1'}}>
                                     Food Reservation System
                                 </Box>  
                             </Typography>
                             <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'primary' }}>
                                     "Designed and implemented the Food Reservation System for Sogod Bellychon, using 
                                     ReactJS for the front-end and C# for the back-end."
                                 </Box>
@@ -252,12 +250,12 @@ export default function Projects() {
                             />
                             <CardContent>
                             <Typography gutterBottom variant="h6" component="div">
-                                <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                <Box sx={{ fontWeight: 'bold', m: 0, color:'body1'}}>
                                     Portfolio
                                 </Box>
                             </Typography>
                             <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'primary' }}>
                                 "Crafted a visually appealing Portfolio web design functioning as a Curriculum Vitae, employing 
                                 ReactJS for the front-end and C# for the back-end."
                                 </Box>
@@ -282,12 +280,12 @@ export default function Projects() {
                             />
                             <CardContent>
                             <Typography gutterBottom variant="h6" component="div">
-                                <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                <Box sx={{ fontWeight: 'bold', m: 0, color:'body1'}}>
                                     Social Media ReactJS
                                 </Box>
                             </Typography>
                             <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'primary' }}>
                                 "Executed the development of a Social Media platform, utilizing React JS with Material-UI for the front-end,
                                 while the back-end was powered by Node.js with Bench SQL."
                                 </Box>
