@@ -26,6 +26,8 @@ import * as Yup from "yup";
 import MuiAlert from "@mui/material/Alert";
 import emailjs from '@emailjs/browser';
 import {Helmet} from "react-helmet";
+import QRCode from 'react-qr-code';
+import { QRCodeCanvas } from "qrcode.react";
 
 
 const background = {
@@ -81,10 +83,29 @@ const ContactSchema = Yup.object().shape({
     .matches(/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i, "Invalid email."),
   message: Yup.string().required("Required"),
 });
+///////////////////////////////////////////////////
+
 //////////////////////////////////////////////////
 export default function Contact(propsBackTop,propsElevate) {
   //////////////////////////////////////
+ // Constant URL for the QR code image
+ //const qrCodeDownload = "https://zabellecastillo.github.io/Portfolio-Castillo";
+ const url = "https://zabellecastillo.github.io/Portfolio-Castillo";
 
+  const downloadQRCode = () => {
+    const canvas = document.querySelector("#qrcode-canvas");
+    if (!canvas) throw new Error("<canvas> not found in the DOM")
+
+    const pngUrl = canvas
+      .toDataURL("image/png")
+      .replace("image/png", "image/octet-stream")
+    const downloadLink = document.createElement("a")
+    downloadLink.href = pngUrl
+    downloadLink.download = "Portfolio QR code.png"
+    document.body.appendChild(downloadLink)
+    downloadLink.click()
+    document.body.removeChild(downloadLink)
+}
   /////////////////////////////////////
   const [checkedSlide, setCheckedSlide] = useState(false);
   useEffect(() => {
@@ -202,12 +223,23 @@ export default function Contact(propsBackTop,propsElevate) {
                                         <hr/>
                                       <br />
                                
-                                      <Typography 
+                                   
+                                    <Grid container direction="row"
+                                                    padding='5px'
+                                                    position = "relative"
+                                                    alignItems= "center"
+                                                    justifyContent= "center"                                                
+                                                >  
+                                                <Grid>
+                                                <Typography 
                                             // fontWeight= "regular"
                                             // fontSize= "18px"
                                             // marginTop= "-4px"
                                             // marginLeft= "8px" 
                                             // color="#0909F4"
+                                            style={{
+                                              float: "left"                          
+                                              }}
                                             className="typographyText"
                                             color="primary"
                                             sx={{ "&:hover": { color: "#d9ff00" } }} 
@@ -223,6 +255,9 @@ export default function Contact(propsBackTop,propsElevate) {
                                         //     marginLeft: "8px",
                                         //     color: "#0909F4",                  
                                         // }}
+                                        style={{
+                                          float: "left"                          
+                                          }}
                                         className="typographyText"
                                         color="primary"
                                             sx={{ "&:hover": { color: "#d9ff00" } }} 
@@ -234,10 +269,47 @@ export default function Contact(propsBackTop,propsElevate) {
                                         className="typographyText"
                                         color="primary"
                                         sx={{ "&:hover": { color: "#d9ff00" } }} 
+                                        style={{
+                                          float: "left"                          
+                                          }}
                                       >
                                              {<PlaceIcon/>} Minglanilla, Cebu, Philippines
                                     </Typography> 
-                          
+                                     </Grid>
+                                     &nbsp;
+                                                 <Grid>
+                                                  <div style={{ height: "auto", margin: "0 auto", maxWidth: 64, width: "100%" }}>
+                                                  {/* <QRCode
+                                                      value="https://zabellecastillo.github.io/Portfolio-Castillo/"
+                                                      id="https://zabellecastillo.github.io/Portfolio-Castillo/"
+                                                      size={256}
+                                                      style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+                                                      viewBox={`0 0 256 256`}
+                                                  /> */}
+                                                   <QRCodeCanvas 
+                                                   style={{ height: "auto", maxWidth: "100%", width: "100%" }}
+                                                      viewBox={`0 0 256 256`}
+                                                   id="qrcode-canvas" level="H" size={300} value={url} />
+                                                  </div>
+                                                   <br/>
+                                            <Tooltip title="Download QR Code">
+                                               
+                                              <Button   
+                                                onClick={downloadQRCode}
+                                                  sx={{ color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
+                                                    style={{                                    
+                                                      borderRadius: 35,
+                                                      backgroundColor: "#002E4E",
+                                                      padding: "8px 16px",
+                                                      fontSize: "13px",
+                                                      }} 
+                                                      variant="contained"> Download 
+                                              </Button> 
+                                            
+                                           </Tooltip>
+                                                </Grid>
+                                    </Grid>
+                                   
                                     <br/>
                                      <br/>
                                         <hr/>

@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -21,6 +21,8 @@ import { motion as m } from "framer-motion";
 import { Link as Scroll } from "react-scroll";
 import {Helmet} from "react-helmet";
 import { NavLink } from "react-router-dom";
+import generatePDF from 'react-to-pdf'; //for generate pdf files
+import QRCode from 'qrcode.react';
 ////////////////////////////////////////
 
 //////////////////////////////////////////////////
@@ -40,6 +42,8 @@ const useStyles = makeStyles({
 ///////////////////////////////////////////
 
 export default function Home(propsBackTop,propsElevate) {
+  //const { toPDF, targetRef } = usePDF({filename: '../assets/PDF/STE_JBC.pdf'});
+  //const targetRef = useRef(); //for generate pdf files
   const classes = useStyles()
  const navigate = useNavigate();
 
@@ -81,9 +85,9 @@ export default function Home(propsBackTop,propsElevate) {
                                           width: "100%",
                                           height: "40%",
                                           borderRadius: "60%",
-                                          backgroundColor:"white",
-                                          boxShadow:"0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 0 0 rgba(0, 0, 0, 0.19)",
-                                          backgroundImage: "radial-gradient(#FFFFFF 35%, white 60%)",
+                                          //backgroundColor:"white",
+                                          //boxShadow:"0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 0 0 rgba(0, 0, 0, 0.19)",
+                                          //backgroundImage: "radial-gradient(#FFFFFF 35%, white 60%)",
                                           marginBottom: "-15px",
                                           }}
                                       />   
@@ -219,6 +223,21 @@ export default function Home(propsBackTop,propsElevate) {
                                                         href={require("../assets/PDF/STE_JBC.pdf")} 
                                                       download="CV_JBC"
                                                       variant="contained"> Download CV </Button> 
+                                                       {/* <br />
+                                                  <div>                                            
+                                                    <QRCode value="../assets/PDF/STE_JBC.pdf" 
+                                                    href={require("../assets/PDF/STE_JBC.pdf")} 
+                                                    download="CV_JBC"
+                                                    />
+                                                  </div> */}
+                                                  {/* <div>
+                                                    <button onClick={() => generatePDF(targetRef, {filename: '../assets/PDF/STE_JBC.pdf'})}>
+                                                        Download PDF
+                                                    </button>
+                                                    <div ref={targetRef}>
+                                                        Content to be included in the PDF
+                                                    </div>
+                                                  </div> */}
                                               </Grid>     
 
                                               <Grid container direction={{ xs: 'column', sm: 'row' }} padding='5px'

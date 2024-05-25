@@ -192,11 +192,17 @@ export default function Experiences() {
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
                                  {<WorkIcon/>}   Associate Software Test Engr.  
                               </Typography>
-                              
+
                               <Typography
                                fontWeight='none' fontSize= '16' m= '0' color="primary"
                                sx={{ "&:hover": { color: "#d9ff00" } }} >
-                                {<CalendarMonthIcon/>} May 23, 2023 – March 23, 2024                             
+                                {<CalendarMonthIcon/>} May 09, 2024 - current                         
+                              </Typography>
+
+                              <Typography
+                               fontWeight='none' fontSize= '16' m= '0' color="primary"
+                               sx={{ "&:hover": { color: "#d9ff00" } }} >
+                                {<CalendarMonthIcon/>} May 23, 2023 – March 23, 2024                           
                               </Typography>
                               
                               <Typography

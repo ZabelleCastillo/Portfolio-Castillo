@@ -227,6 +227,18 @@ export default function Skills() {
     start: 0,
     end: 90,
   });
+  const { value: value21 } = useCountUp({
+    isCounting: true,
+    duration: 1,
+    start: 0,
+    end: 50,
+  });
+  const { value: value22 } = useCountUp({
+    isCounting: true,
+    duration: 1,
+    start: 0,
+    end: 50,
+  });
   ////////////////////////////////////////
   const [checkedSlide, setCheckedSlide] = useState(false);
   useEffect(() => {
@@ -408,6 +420,18 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography>
                                                 <hr/>
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
+                                                    Bubble IO
+                                                        <span>
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value22} text={`${value22}%`}  /> 
+                                                            </Box> 
+                                                        </span>
+                                                    </Box>                             
+                                                </Typography> 
+                                                <hr /> 
                                         </div>
                                     </Item2>
                               </Grid>
@@ -541,6 +565,18 @@ export default function Skills() {
                                                             <Box 
                                                             style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
                                                             <CircularProgressbar value={value20} text={`${value20}%`}  /> 
+                                                            </Box> 
+                                                        </span>
+                                                    </Box>                             
+                                                </Typography> 
+                                                <hr /> 
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
+                                                    Jotform
+                                                        <span>
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value21} text={`${value21}%`}  /> 
                                                             </Box> 
                                                         </span>
                                                     </Box>                             

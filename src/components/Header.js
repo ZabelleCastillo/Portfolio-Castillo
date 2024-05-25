@@ -267,6 +267,11 @@ export default function Header({propsBackTop,propsElevate, mode, setMode}) {
                 <ListItemText primary="CONTACT" />
               </ListItemButton>
           </NavLink>
+
+          <FormControlLabel
+                      control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+                      onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+           />
       </List>
     </Box>
  
