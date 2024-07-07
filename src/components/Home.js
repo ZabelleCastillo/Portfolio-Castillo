@@ -146,12 +146,16 @@ export default function Home(propsBackTop,propsElevate) {
                                                           }}
                                                         >
                                                           {" "}
-                                                          Software Test Engineer
+                                                          Software Engineer
                                                       </span>
-                                                        , specializing in manual testing and API testing, with a forthcoming transition into 
+                                                        {/* , specializing in manual testing and API testing, with a forthcoming transition into 
                                                         automation testing. Additionally, I possess proficiency in coding and design, 
                                                         with a keen passion for crafting aesthetically pleasing front-end interfaces that 
-                                                        deliver exceptional user experiences.
+                                                        deliver exceptional user experiences. */}
+                                                        , specializing in Apigee. I am eagerly anticipating my 
+                                                        upcoming project and am enthusiastic about building a 
+                                                        remarkable project where I will also apply my software 
+                                                        testing skills.
                                                   </Typography>   
                                                 </m.div>          
                                           <Grid container direction="row"

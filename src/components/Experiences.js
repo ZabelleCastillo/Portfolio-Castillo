@@ -187,6 +187,36 @@ export default function Experiences() {
                 >  
                       <Grid item xs={12}>
                           <Item2>
+                            <Typography 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
+                                sx={{ "&:hover": { color: "#d9ff00" } }} >
+                                 {<WorkIcon/>}  Software Engineer Associate.  
+                              </Typography>
+
+                             <Typography
+                               fontWeight='none' fontSize= '16' m= '0' color="primary"
+                               sx={{ "&:hover": { color: "#d9ff00" } }} >
+                                {<CalendarMonthIcon/>} June 24, 2024 – current                           
+                              </Typography>
+                              
+                              <Typography
+                               fontWeight='none' fontSize= '16' m= '0' color="primary" 
+                                sx={{ "&:hover": { color: "#d9ff00" } }} >
+                              {<BusinessIcon/>} Accenture
+                              </Typography>
+                                <Typography>
+                                  <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
+                                    Job responsibilities: As a Software Engineer Associate, my job 
+                                    responsibilities will include back-end development if we are 
+                                    deployed on a project. Currently, I am attending the Accenture 
+                                    Technology Analyst School (ATAS) and will subsequently participate 
+                                    in a bootcamp. Following this, we will commence our project, and I 
+                                    am looking forward to my specific responsibilities and the programming 
+                                    languages, frameworks, and other technologies that we will use.
+                                  </Box>  
+                                </Typography>
+                            <hr/>
+
                               <Typography 
                                 fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
@@ -196,7 +226,7 @@ export default function Experiences() {
                               <Typography
                                fontWeight='none' fontSize= '16' m= '0' color="primary"
                                sx={{ "&:hover": { color: "#d9ff00" } }} >
-                                {<CalendarMonthIcon/>} May 09, 2024 - current                         
+                                {<CalendarMonthIcon/>} May 09, 2024 - June 20, 2024                         
                               </Typography>
 
                               <Typography

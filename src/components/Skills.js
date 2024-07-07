@@ -432,6 +432,19 @@ export default function Skills() {
                                                     </Box>                             
                                                 </Typography> 
                                                 <hr /> 
+
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
+                                                         Visual Studio Code
+                                                         <span>
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value20} text={`${value20}%`}  /> 
+                                                            </Box> 
+                                                         </span>
+                                                    </Box>                             
+                                                </Typography> 
+                                                <hr/>         
                                         </div>
                                     </Item2>
                               </Grid>
@@ -581,7 +594,20 @@ export default function Skills() {
                                                         </span>
                                                     </Box>                             
                                                 </Typography> 
-                                                <hr />                 
+                                                <hr />  
+
+                                                 <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
+                                                         Microsoft Visual Studio Management
+                                                         <span>
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value20} text={`${value20}%`}  /> 
+                                                            </Box> 
+                                                         </span>
+                                                    </Box>                             
+                                                </Typography> 
+                                                <hr/>              
                                             </div>
                                     </Item2>
                                 </Grid>
