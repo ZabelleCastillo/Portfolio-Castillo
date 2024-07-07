@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
@@ -21,6 +21,8 @@ import { motion as m } from "framer-motion";
 import { Link as Scroll } from "react-scroll";
 import {Helmet} from "react-helmet";
 import { NavLink } from "react-router-dom";
+import generatePDF from 'react-to-pdf'; //for generate pdf files
+import QRCode from 'qrcode.react';
 ////////////////////////////////////////
 
 //////////////////////////////////////////////////
@@ -40,6 +42,8 @@ const useStyles = makeStyles({
 ///////////////////////////////////////////
 
 export default function Home(propsBackTop,propsElevate) {
+  //const { toPDF, targetRef } = usePDF({filename: '../assets/PDF/STE_JBC.pdf'});
+  //const targetRef = useRef(); //for generate pdf files
   const classes = useStyles()
  const navigate = useNavigate();
 
@@ -81,9 +85,9 @@ export default function Home(propsBackTop,propsElevate) {
                                           width: "100%",
                                           height: "40%",
                                           borderRadius: "60%",
-                                          backgroundColor:"white",
-                                          boxShadow:"0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 0 0 rgba(0, 0, 0, 0.19)",
-                                          backgroundImage: "radial-gradient(#FFFFFF 35%, white 60%)",
+                                          //backgroundColor:"white",
+                                          //boxShadow:"0 0 0 0 rgba(0, 0, 0, 0.2), 0 0px 0 0 rgba(0, 0, 0, 0.19)",
+                                          //backgroundImage: "radial-gradient(#FFFFFF 35%, white 60%)",
                                           marginBottom: "-15px",
                                           }}
                                       />   
@@ -131,8 +135,9 @@ export default function Home(propsBackTop,propsElevate) {
                                                   animate={{opacity:1}}
                                                   transition={{duration: 0.75, ease: "easeOut"}}
                                                 >
-                                                <Typography style={{ fontSize: "18px", marginLeft:"25px"  }} >                     
+                                                <Typography   style={{ fontSize: "18px", marginLeft:"25px"  }} >                     
                                                         <span
+                                                        
                                                           style={{
                                                             fontWeight: "bold",
                                                             fontSize: "30px",
@@ -141,12 +146,16 @@ export default function Home(propsBackTop,propsElevate) {
                                                           }}
                                                         >
                                                           {" "}
-                                                          Software Test Engineer
+                                                          Software Engineer
                                                       </span>
-                                                        , specializing in manual testing and API testing, with a forthcoming transition into 
+                                                        {/* , specializing in manual testing and API testing, with a forthcoming transition into 
                                                         automation testing. Additionally, I possess proficiency in coding and design, 
                                                         with a keen passion for crafting aesthetically pleasing front-end interfaces that 
-                                                        deliver exceptional user experiences.
+                                                        deliver exceptional user experiences. */}
+                                                        , specializing in Apigee. I am eagerly anticipating my 
+                                                        upcoming project and am enthusiastic about building a 
+                                                        remarkable project where I will also apply my software 
+                                                        testing skills.
                                                   </Typography>   
                                                 </m.div>          
                                           <Grid container direction="row"
@@ -160,6 +169,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                 <Button className={classes.button} 
                                                 onClick={()=> navigate("/Contact")}
                                                 //onClick={event =>  window.location.href='/Contact'}
+                                                sx={{ color: "#fff" }}
                                                       style={{
                                                         borderRadius: 35,
                                                         backgroundColor: "#002E4E",
@@ -172,6 +182,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                 {/* <NavLink to="/Services" > */}
                                               <Button className={classes.button} 
                                               onClick={()=> navigate("/Services")}
+                                               sx={{ color: "#fff" }}
                                                   style={{
                                                     borderRadius: 35,
                                                     backgroundColor: "#002E4E",
@@ -194,6 +205,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                 }}
                                                 //onClick={event =>  window.location.href='/Projects'}
                                                 //onClick={()=> navigate("/Projects")}
+                                                sx={{ color: "#fff" }}
                                               variant="contained">Projects
                                               </Button>
                                               {/* </NavLink> */}
@@ -205,6 +217,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                     justifyContent= "center"
                                               >
                                                   <Button className={classes.button}   
+                                                   sx={{ color: "#fff" }}
                                                       style={{
                                                         borderRadius: 35,
                                                         backgroundColor: "#002E4E",
@@ -214,6 +227,21 @@ export default function Home(propsBackTop,propsElevate) {
                                                         href={require("../assets/PDF/STE_JBC.pdf")} 
                                                       download="CV_JBC"
                                                       variant="contained"> Download CV </Button> 
+                                                       {/* <br />
+                                                  <div>                                            
+                                                    <QRCode value="../assets/PDF/STE_JBC.pdf" 
+                                                    href={require("../assets/PDF/STE_JBC.pdf")} 
+                                                    download="CV_JBC"
+                                                    />
+                                                  </div> */}
+                                                  {/* <div>
+                                                    <button onClick={() => generatePDF(targetRef, {filename: '../assets/PDF/STE_JBC.pdf'})}>
+                                                        Download PDF
+                                                    </button>
+                                                    <div ref={targetRef}>
+                                                        Content to be included in the PDF
+                                                    </div>
+                                                  </div> */}
                                               </Grid>     
 
                                               <Grid container direction={{ xs: 'column', sm: 'row' }} padding='5px'

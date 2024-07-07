@@ -188,14 +188,15 @@ export default function Acknowledgment() {
                                 />
                                 <CardContent>
                                     <center>
-                                        <Typography gutterBottom variant="h6" component="div">
-                                            <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                        <Typography color="body1" gutterBottom variant="h6" component="div">
+                                            <Box sx={{ fontWeight: 'bold', m: 0}}>
                                                 Software Quality Assurance  Automation Testing
                                             </Box>  
                                         </Typography>
                                     
                                                 <Button className={classes.button}  
                                                       onClick={handleClickOpenAuto} 
+                                                      sx={{color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                                       style={{
                                                         borderRadius: 35,
                                                         backgroundColor: "#002E4E",
@@ -252,12 +253,13 @@ export default function Acknowledgment() {
                             <CardContent>
                                 <center>
                                     <Typography gutterBottom variant="h6" component="div">
-                                        <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                        <Box sx={{ fontWeight: 'bold', m: 0}}>
                                             Software Quality Assurance Manual Testing
                                         </Box>     
                                     </Typography>
                                     <Button className={classes.button}   
                                                       onClick={handleClickOpenManual} 
+                                                      sx={{color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }}       
                                                       style={{
                                                         borderRadius: 35,
                                                         backgroundColor: "#002E4E",
@@ -315,12 +317,13 @@ export default function Acknowledgment() {
                             <CardContent>
                                 <center>
                                 <Typography gutterBottom variant="h6" component="div">
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                     Quantum Geographic Information System
                                     </Box>    
                                 </Typography>
                                 <Button className={classes.button}   
                                                   onClick={handleClickOpenQGIS} 
+                                                  sx={{color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }}      
                                                       style={{
                                                         borderRadius: 35,
                                                         backgroundColor: "#002E4E",
@@ -384,12 +387,13 @@ export default function Acknowledgment() {
                             <CardContent>
                             <center>
                              <Typography gutterBottom variant="h6" component="div">     
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                           Robotics Workshop <br /> via Arduino
                                     </Box>
                             </Typography>
                             <Button className={classes.button}   
                                     onClick={handleClickOpenArduino} 
+                                    sx={{color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                                       style={{
                                                         borderRadius: 35,
                                                         backgroundColor: "#002E4E",
@@ -446,12 +450,13 @@ export default function Acknowledgment() {
                             <CardContent>
                             <center>
                                 <Typography gutterBottom variant="h6" component="div">
-                                    <Box sx={{ fontWeight: 'bold', m: 0, color:'#002E4E'}}>
+                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
                                         Utilizing Online Strategy, <br /> Tools & Tactics 
                                     </Box>    
                                 </Typography>
                                 <Button className={classes.button}   
                                         onClick={handleClickOpenStrat} 
+                                        sx={{color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
                                                       style={{
                                                         borderRadius: 35,
                                                         backgroundColor: "#002E4E",

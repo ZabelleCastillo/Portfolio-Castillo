@@ -267,6 +267,11 @@ export default function Header({propsBackTop,propsElevate, mode, setMode}) {
                 <ListItemText primary="CONTACT" />
               </ListItemButton>
           </NavLink>
+
+          <FormControlLabel
+                      control={<MaterialUISwitch sx={{ m: 1 }} defaultChecked />}
+                      onChange={(e) => setMode(mode === "light" ? "dark" : "light")}
+           />
       </List>
     </Box>
  
@@ -294,9 +299,9 @@ export default function Header({propsBackTop,propsElevate, mode, setMode}) {
                   </IconButton>
                  
                   <Typography 
-                    // variant="h6"
-                    // component="div"
-                    sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+                    //variant="h6"
+                    //component="div"              
+                    sx={{ flexGrow: 1, color: "#fff", display: { xs: 'none', sm: 'block' } }}
                   >
                   <h6>
                     J<span id="hide"> essa&nbsp;</span> 

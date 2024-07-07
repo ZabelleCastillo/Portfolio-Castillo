@@ -45,7 +45,7 @@ const Item2 = styled(Paper)(({ theme }) => ({
     ...theme.typography.body2,
     padding: theme.spacing(1),
     textAlign: 'justify',
-    color: theme.palette.text.secondary,
+    color: theme.palette.text.body1,
   }));
 
 export default function Experiences() {
@@ -187,50 +187,84 @@ export default function Experiences() {
                 >  
                       <Grid item xs={12}>
                           <Item2>
+                            <Typography 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
+                                sx={{ "&:hover": { color: "#d9ff00" } }} >
+                                 {<WorkIcon/>}  Software Engineer Associate.  
+                              </Typography>
+
+                             <Typography
+                               fontWeight='none' fontSize= '16' m= '0' color="primary"
+                               sx={{ "&:hover": { color: "#d9ff00" } }} >
+                                {<CalendarMonthIcon/>} June 24, 2024 – current                           
+                              </Typography>
+                              
+                              <Typography
+                               fontWeight='none' fontSize= '16' m= '0' color="primary" 
+                                sx={{ "&:hover": { color: "#d9ff00" } }} >
+                              {<BusinessIcon/>} Accenture
+                              </Typography>
+                                <Typography>
+                                  <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
+                                    Job responsibilities: As a Software Engineer Associate, my job 
+                                    responsibilities will include back-end development if we are 
+                                    deployed on a project. Currently, I am attending the Accenture 
+                                    Technology Analyst School (ATAS) and will subsequently participate 
+                                    in a bootcamp. Following this, we will commence our project, and I 
+                                    am looking forward to my specific responsibilities and the programming 
+                                    languages, frameworks, and other technologies that we will use.
+                                  </Box>  
+                                </Typography>
+                            <hr/>
+
                               <Typography 
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
                                  {<WorkIcon/>}   Associate Software Test Engr.  
                               </Typography>
-                              
+
                               <Typography
-                               fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                               fontWeight='none' fontSize= '16' m= '0' color="primary"
                                sx={{ "&:hover": { color: "#d9ff00" } }} >
-                                {<CalendarMonthIcon/>} May 23, 2023 – March 23, 2024                             
+                                {<CalendarMonthIcon/>} May 09, 2024 - June 20, 2024                         
+                              </Typography>
+
+                              <Typography
+                               fontWeight='none' fontSize= '16' m= '0' color="primary"
+                               sx={{ "&:hover": { color: "#d9ff00" } }} >
+                                {<CalendarMonthIcon/>} May 23, 2023 – March 23, 2024                           
                               </Typography>
                               
                               <Typography
-                               fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                               fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
                               {<BusinessIcon/>} Gothong Southern Shipping Lines, Inc.
                               </Typography>
                                 <Typography>
-                                  <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
-                                    <span
-                                     fontWeight='none' fontSize= '16' m= '0' color='blue' 
-                                    > Job responsibilities: </span> In my role as a software test engineer, my primary job responsibilities involve designing, implementing,
+                                  <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
+                                    Job responsibilities: In my role as a software test engineer, my primary job responsibilities involve designing, implementing,
                                     and executing test plans, alongside identifying, reporting, and tracking defects to guarantee that 
                                     software products meet or surpass customer expectations.
                                   </Box>  
                                 </Typography>
                             <hr/>
                             <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
                             {<WorkIcon/>} Outsourcing Agent
                             </Typography>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
                               {<CalendarMonthIcon/>} January 2023 – April 2023 
                               </Typography>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
                               {<BusinessIcon/>} MMS Placement Int’l, Inc.
                               </Typography>
                               <Typography>
-                              <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                              <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0}}>
                                 Job responsibilities: As an outsourcing agent, my job responsibilities primarily revolve around the management of outsourcing
                                 services. This entails coordinating with overseas workers, ensuring adherence to contractual agreements, 
                                 and providing general support to enhance the activities and profitability of the company.        
@@ -238,44 +272,44 @@ export default function Experiences() {
                                </Typography>
                             <hr/>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<WorkIcon/>} Self-Employed 
                               </Typography>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<CalendarMonthIcon/>} March 2020 – September 2022
                               </Typography>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<BusinessIcon/>} Sogod BellyChon
                               </Typography>
                               <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                 Job responsibilities: As a self-employed individual, my job responsibilities encompass developing menus and service packages, 
                                 coordinating meal delivery, as well as managing event schedules and food preparation timelines.
                                 </Box>
                               </Typography>
                             <hr />     
                               <Typography
-                                  fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                  fontWeight='none' fontSize= '16' m= '0' color="primary"
                                   sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<WorkIcon/>} Company Secretary 
                               </Typography>                      
                               <Typography
-                                  fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                  fontWeight='none' fontSize= '16' m= '0' color="primary"
                                   sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<CalendarMonthIcon/>} August 2017 – February 2020
                               </Typography>
                               <Typography
-                                  fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                  fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                   sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<BusinessIcon/>}   WilHer Construction
                               </Typography>
                               <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0}}>
                                   Job responsibilities: My job responsibilities as a Construction Secretary include answering phones, filing, 
                                   copying, ordering supplies, sorting mail, relaying messages, composing correspondence, 
                                   and performing various other administrative tasks essential to business operations.
@@ -283,22 +317,22 @@ export default function Experiences() {
                               </Typography>
                             <hr />
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<WorkIcon/>} Call Analyst 
                               </Typography>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<CalendarMonthIcon/>} June 2015 – July 2017
                               </Typography>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<BusinessIcon/>}  Humanatic
                               </Typography>
                               <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0}}>
                                   Job responsibilities: My job responsibilities entail assisting clients in reviewing their calls, 
                                   followed by the provision of analytical reports. This valuable data serves to 
                                   enhance customer service and sales performance.
@@ -306,43 +340,43 @@ export default function Experiences() {
                               </Typography>
                             <hr />
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<WorkIcon/>} Intern 
                               </Typography>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary"
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<CalendarMonthIcon/>} July 2014 – October 2014
                               </Typography>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary"
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<BusinessIcon/>} Metro Ormoc Community Cooperative – OCCCI  
                               </Typography>
                               <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                 Job responsibilities: My primary responsibilities encompass updating account records and reviewing loan files.
                                 </Box>
                                </Typography>
                             <hr />   
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary"
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<WorkIcon/>} Intern
                               </Typography>                         
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<CalendarMonthIcon/>} June 2014 – July 2014
                               </Typography>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<BusinessIcon/>} Oxior Incorporated
                               </Typography>
                               <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                   Job responsibilities: My responsibilities include meticulously invoicing data into the system, 
                                   systematically storing it within the database, and conducting manual testing of the software to 
                                   identify any potential bugs or defects.
@@ -350,22 +384,22 @@ export default function Experiences() {
                               </Typography>
                             <hr />
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<WorkIcon/>} Sale Associate 
                               </Typography>
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary"
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<CalendarMonthIcon/>} April 2014 – June 2014
                               </Typography>                           
                               <Typography
-                                fontWeight='none' fontSize= '16' m= '0' color='#002E4E' 
+                                fontWeight='none' fontSize= '16' m= '0' color="primary"
                                 sx={{ "&:hover": { color: "#d9ff00" } }}>
                               {<BusinessIcon/>} Gaisano Capital
                               </Typography>
                               <Typography>
-                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'#002E4E' }}>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                   Job responsibilities: Facilitates sales by actively engaging customers, employing 
                                   suggestive selling techniques, and imparting comprehensive product knowledge. 
                                   Extends a warm welcome to customers and courteously assists them in addressing 
