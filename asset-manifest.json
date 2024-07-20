@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Castillo/static/css/main.7ca201fe.css",
-    "main.js": "/Portfolio-Castillo/static/js/main.7668d0fb.js",
+    "main.js": "/Portfolio-Castillo/static/js/main.2229bf6c.js",
     "static/js/213.043ab5a4.chunk.js": "/Portfolio-Castillo/static/js/213.043ab5a4.chunk.js",
     "static/js/553.be81d643.chunk.js": "/Portfolio-Castillo/static/js/553.be81d643.chunk.js",
     "static/js/453.16342fe2.chunk.js": "/Portfolio-Castillo/static/js/453.16342fe2.chunk.js",
@@ -32,7 +32,9 @@
     "static/media/QGIS.jpg": "/Portfolio-Castillo/static/media/QGIS.318ffe2d93e5ca5c3320.jpg",
     "static/media/software_testing.jpg": "/Portfolio-Castillo/static/media/software_testing.11e3e589966002149c04.jpg",
     "static/media/Belle1_photo.jpg": "/Portfolio-Castillo/static/media/Belle1_photo.fc3d423bc45b0bdff1ae.jpg",
+    "static/media/AssociateIntegrationDeveloperCertificate.png": "/Portfolio-Castillo/static/media/AssociateIntegrationDeveloperCertificate.55ec0f5196bcbaf330b3.png",
     "static/media/monitor.gif": "/Portfolio-Castillo/static/media/monitor.31637fd0fbae1adee922.gif",
+    "static/media/ProfessionalIntegrationDeveloperCertification.png": "/Portfolio-Castillo/static/media/ProfessionalIntegrationDeveloperCertification.4504970222512014ab8e.png",
     "static/media/browser.gif": "/Portfolio-Castillo/static/media/browser.1ff0278b50162b384bf8.gif",
     "static/media/css.gif": "/Portfolio-Castillo/static/media/css.0e41e4e4b868efaf64c4.gif",
     "static/media/html.gif": "/Portfolio-Castillo/static/media/html.b2380d273412f3cbaf4f.gif",
@@ -42,13 +44,13 @@
     "static/media/automationtesting.jpg": "/Portfolio-Castillo/static/media/automationtesting.7f8d0e0d62ec34c3b97f.jpg",
     "index.html": "/Portfolio-Castillo/index.html",
     "main.7ca201fe.css.map": "/Portfolio-Castillo/static/css/main.7ca201fe.css.map",
-    "main.7668d0fb.js.map": "/Portfolio-Castillo/static/js/main.7668d0fb.js.map",
+    "main.2229bf6c.js.map": "/Portfolio-Castillo/static/js/main.2229bf6c.js.map",
     "213.043ab5a4.chunk.js.map": "/Portfolio-Castillo/static/js/213.043ab5a4.chunk.js.map",
     "553.be81d643.chunk.js.map": "/Portfolio-Castillo/static/js/553.be81d643.chunk.js.map",
     "453.16342fe2.chunk.js.map": "/Portfolio-Castillo/static/js/453.16342fe2.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7ca201fe.css",
-    "static/js/main.7668d0fb.js"
+    "static/js/main.2229bf6c.js"
   ]
 }
