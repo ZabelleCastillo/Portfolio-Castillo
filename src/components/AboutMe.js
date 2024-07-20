@@ -142,7 +142,7 @@ export default function AboutMe() {
                                       <Box 
                                       //sx={{ fontWeight: 'none', fontSize: 14, m: 0, color:'white', //#002E4E}}
                                       > 
-                                        {<WorkIcon/>} Software Test Engineer</Box>
+                                        {<WorkIcon/>} Software Engineer</Box>
                                   </Typography>  
                                   <br/>
                                   <Typography
@@ -218,8 +218,10 @@ export default function AboutMe() {
                           <Item2>
                               <Typography color="primary">
                                 <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
-                                  "Hello, I'm Jessa Belle, known as either Zabelle, Jess or Belle. Located at Minglanilla, 
-                                  Cebu City 6064. As a Software Test Engineer, my duties encompass utilizing Zentao 
+                                  "Hello, I'm Jessa Belle, known as either Zabelle, Jess or Belle. Located in Minglanilla, 
+                                  Cebu - 6064 PH. As a Software Engineer, I am currently focusing on Boomi which is using for 
+                                  integration that involves API. 
+                                  I worked as a Software Test Engineer in my previous job, my duties encompass utilizing Zentao 
                                   as a project management tool for reporting bugs, underscoring the pivotal role I play 
                                   in assuring the quality, functionality, and performance of software products before their launch.          
                                 </Box>
@@ -236,8 +238,8 @@ export default function AboutMe() {
                               <br />
                               <Typography color="primary">
                                 <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
-                                  While my past involvement in web design and coding was not extensively pursued, I still retain 
-                                  a passion for these areas. As a software test engineer, this background proves advantageous as 
+                                  While my past involvement in software testing, web design and coding was not extensively pursued, I still retain 
+                                  a passion for these areas. As a software engineer, this background proves advantageous as 
                                   it enables me to proficiently evaluate and confirm the responsiveness of front-end user interfaces. 
                                   This capability aligns with my responsibility to guarantee that each element meets the precise 
                                   expectations of end users.
@@ -246,7 +248,7 @@ export default function AboutMe() {
                               <br />
                               <Typography  color="primary">
                                 <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
-                                    Beyond my role as a Software Test Engineer, I find joy in various hobbies such as 
+                                    Beyond my role as a Software Engineer, I find joy in various hobbies such as 
                                     working out, hiking, and indulging in motivational books. I'm passionate about sports 
                                     like basketball, badminton, jogging, lawn tennis, and billiards, and I also enjoy 
                                     coding.

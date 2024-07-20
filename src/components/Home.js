@@ -152,7 +152,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                         automation testing. Additionally, I possess proficiency in coding and design, 
                                                         with a keen passion for crafting aesthetically pleasing front-end interfaces that 
                                                         deliver exceptional user experiences. */}
-                                                        , specializing in Apigee. I am eagerly anticipating my 
+                                                        , specializing in Boomi. I am eagerly anticipating my 
                                                         upcoming project and am enthusiastic about building a 
                                                         remarkable project where I will also apply my software 
                                                         testing skills.

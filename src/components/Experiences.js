@@ -132,7 +132,7 @@ export default function Experiences() {
                                   sx={{ "&:hover": { color: "#d9ff00" } }}
                                 >
                                     { <WorkIcon/>}
-                                   Software Test Engineer
+                                   Software Engineer
                                 </Typography>  
                             <br />
                                 <Typography
@@ -190,7 +190,7 @@ export default function Experiences() {
                             <Typography 
                                 fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
-                                 {<WorkIcon/>}  Software Engineer Associate.  
+                                 {<WorkIcon/>}  Software Engineer Associate  
                               </Typography>
 
                              <Typography
@@ -207,12 +207,12 @@ export default function Experiences() {
                                 <Typography>
                                   <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                     Job responsibilities: As a Software Engineer Associate, my job 
-                                    responsibilities will include back-end development if we are 
-                                    deployed on a project. Currently, I am attending the Accenture 
+                                    responsibilities will include back-end development which is using Boomi for API integration 
+                                    if we are 
+                                    deployed on a project. I am done attending the Accenture 
                                     Technology Analyst School (ATAS) and will subsequently participate 
                                     in a bootcamp. Following this, we will commence our project, and I 
-                                    am looking forward to my specific responsibilities and the programming 
-                                    languages, frameworks, and other technologies that we will use.
+                                    am looking forward to my specific responsibilities and the other technologies that we will use.
                                   </Box>  
                                 </Typography>
                             <hr/>
@@ -226,13 +226,7 @@ export default function Experiences() {
                               <Typography
                                fontWeight='none' fontSize= '16' m= '0' color="primary"
                                sx={{ "&:hover": { color: "#d9ff00" } }} >
-                                {<CalendarMonthIcon/>} May 09, 2024 - June 20, 2024                         
-                              </Typography>
-
-                              <Typography
-                               fontWeight='none' fontSize= '16' m= '0' color="primary"
-                               sx={{ "&:hover": { color: "#d9ff00" } }} >
-                                {<CalendarMonthIcon/>} May 23, 2023 – March 23, 2024                           
+                                {<CalendarMonthIcon/>} May 23, 2023 – June 21, 2024                           
                               </Typography>
                               
                               <Typography
