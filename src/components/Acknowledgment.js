@@ -11,6 +11,7 @@ import arduino from '../assets/Certificates/arduino.jpg';
 import OnlineStrategy from '../assets/Certificates/OnlineStrategy.jpg';
 import AssociateIntegrationDeveloperCertificate from '../assets/Certificates/AssociateIntegrationDeveloperCertificate.png';
 import ProfessionalIntegrationDeveloperCertification from '../assets/Certificates/ProfessionalIntegrationDeveloperCertification.png';
+import ProfessionalAPIDesignCertification from '../assets/Certificates/ProfessionalAPIDesignCertification.PNG';
 import Grid from '@mui/material/Grid';
 import Container from '@mui/material/Container';
 import Box from '@mui/material/Box';
@@ -87,6 +88,17 @@ export default function Acknowledgment() {
    useEffect(() => {
      setCheckedSlide(true);
    }, []);
+
+   /////////////////////////////////////////////
+   const [openAPIBoomi, setOpenAPIBoomi] = useState(false);
+
+   const handleClickOpenAPIBoomi = () => {
+    setOpenAPIBoomi(true);
+   };
+ 
+   const handleCloseAPIBoomi = () => {
+    setOpenAPIBoomi(false);
+   }; 
 /////////////////////////////////////////////
  const [openProfBoomi, setOpenProfBoomi] = useState(false);
 
@@ -197,8 +209,73 @@ export default function Acknowledgment() {
         <Grid container rowSpacing={1} columnSpacing={{xs:1, sm:2,md:3}}
                 alignItems= "center"
                 justifyContent= "center" >
+
+              <Grid margin="auto">
+                    <Card sx={{ maxWidth: 345 }} className="bottomLeft">           
+                            <CardActionArea>
+                                <CardMedia id="myImg"
+                                component="img"
+                                height="300px"
+                                //image="./assets/Belle.jpg"
+                                image={ProfessionalAPIDesignCertification}
+                                alt="Boomi"
+                                />
+                                <CardContent>
+                                    <center>
+                                        <Typography color="body1" gutterBottom variant="h6" component="div">
+                                            <Box sx={{ fontWeight: 'bold', m: 0}}>
+                                            Professional Application Programming Interface Design {<br/>} Boomi
+                                            </Box>  
+                                        </Typography>
+                                    
+                                                <Button className={classes.button}  
+                                                      onClick={handleClickOpenAPIBoomi} 
+                                                      sx={{color: "#fff", "&:hover": { cursor: "pointer", color: "#d9ff00"} }} 
+                                                      style={{
+                                                        borderRadius: 35,
+                                                        backgroundColor: "#002E4E",
+                                                        padding: "8px 16px",
+                                                        fontSize: "13px",
+                                                      }} 
+                                                      variant="contained">  View 
+                                                </Button>                                
+                                    </center>                   
+                                </CardContent>
+                            </CardActionArea>
+                    </Card>               
+                </Grid>
+                        <Dialog
+                          fullScreen
+                          open={openAPIBoomi}
+                          onClose={handleCloseAPIBoomi}
+                          TransitionComponent={Transition}
+                        >
+                          <AppBar sx={{ position: 'relative', backgroundColor:'#002E4E' }}>
+                            <Toolbar>
+                              <IconButton
+                                edge="start"
+                                color="inherit"
+                                onClick={handleCloseAPIBoomi}
+                                aria-label="close"
+                              >
+                                <CloseIcon />
+                              </IconButton>
+                              <Typography sx={{ ml: 2, flex: 1 }} variant="h6" component="div">
+                                Acknowledgment
+                              </Typography>
+                            </Toolbar>
+                          </AppBar>
+                              <br/>
+                                  <center>
+                                      <img src={ProfessionalAPIDesignCertification} alt="" 
+                                      height="auto" width="50%" 
+                                      />
+                                  </center>
+                              <br />
+                                <Footer/>
+                        </Dialog> 
       
-          <Grid margin="auto">
+                  <Grid margin="auto">
                     <Card sx={{ maxWidth: 345 }} className="bottomLeft">           
                             <CardActionArea>
                                 <CardMedia id="myImg"
@@ -231,8 +308,8 @@ export default function Acknowledgment() {
                                 </CardContent>
                             </CardActionArea>
                     </Card>               
-            </Grid>
-            <Dialog
+                  </Grid>
+                        <Dialog
                           fullScreen
                           open={openProfBoomi}
                           onClose={handleCloseProfBoomi}
@@ -263,7 +340,7 @@ export default function Acknowledgment() {
                                 <Footer/>
                         </Dialog>    
 
-                        <Grid margin="auto">
+                <Grid margin="auto">
                     <Card sx={{ maxWidth: 345 }} className="bottomLeft">           
                             <CardActionArea>
                                 <CardMedia id="myImg"
@@ -296,7 +373,7 @@ export default function Acknowledgment() {
                                 </CardContent>
                             </CardActionArea>
                     </Card>               
-            </Grid>
+                  </Grid>
                         <Dialog
                           fullScreen
                           open={openAssoBoomi}
@@ -326,9 +403,14 @@ export default function Acknowledgment() {
                                   </center>
                               <br />
                                 <Footer/>
-                        </Dialog>                                         
+                        </Dialog>                                                            
+     </Grid>  
+     <Grid container rowSpacing={1} columnSpacing={{xs:1, sm:2,md:3}}
+        alignItems= "center"
+        justifyContent= "center"                                                                                                               
+     >
 
-            <Grid margin="auto">
+              <Grid margin="auto">
                     <Card sx={{ maxWidth: 345 }} className="bottomLeft">           
                             <CardActionArea>
                                 <CardMedia id="myImg"
@@ -361,7 +443,7 @@ export default function Acknowledgment() {
                                 </CardContent>
                             </CardActionArea>
                     </Card>               
-            </Grid>
+                  </Grid>
                       <Dialog
                           fullScreen
                           open={openAuto}
@@ -391,14 +473,9 @@ export default function Acknowledgment() {
                                   </center>
                               <br />
                                 <Footer/>
-                        </Dialog>                            
-                              
-     </Grid>  
-     <Grid container rowSpacing={1} columnSpacing={{xs:1, sm:2,md:3}}
-        alignItems= "center"
-        justifyContent= "center"                                                                                                               
-     >
-      <Grid margin="auto" >
+                        </Dialog>                                           
+
+                <Grid margin="auto" >
                     <Card sx={{ maxWidth: 345 }} className="bottomLeft"> 
                         <CardActionArea>
                             <CardMedia id="myImg"
@@ -461,11 +538,9 @@ export default function Acknowledgment() {
                                   </center>
                               <br />
                                 <Footer/>
-                        </Dialog>                         
-              
-              
-
-            <Grid margin="auto">
+                       </Dialog>
+                       
+                <Grid margin="auto">
                     <Card sx={{ maxWidth: 345}} className="bottomRight">
                         <CardActionArea>
                             <CardMedia id="myImg"
@@ -497,7 +572,7 @@ export default function Acknowledgment() {
                             </CardContent>
                         </CardActionArea>
                         </Card>
-            </Grid> 
+                </Grid> 
                       <Dialog
                           fullScreen
                           open={openQGIS}
@@ -527,9 +602,16 @@ export default function Acknowledgment() {
                                   </center>
                               <br />
                                 <Footer/>
-                        </Dialog>              
+                        </Dialog>                                           
+        </Grid>    
 
-            <Grid margin="auto" >
+        <Grid container rowSpacing={1} columnSpacing={{xs:1, sm:2,md:3}}
+          alignItems= "center"
+          justifyContent= "center"                                                                                                               
+         >          
+
+
+                <Grid margin="auto" >
                     <Card sx={{ maxWidth: 345}} className="bottomRight">
                         <CardActionArea>
                             <CardMedia id="myImg"
@@ -561,8 +643,8 @@ export default function Acknowledgment() {
                             </CardContent>
                         </CardActionArea>
                         </Card>
-            </Grid>  
-            <Dialog
+                  </Grid>  
+                        <Dialog
                           fullScreen
                           open={openArduino}
                           onClose={handleCloseArduino}
@@ -591,13 +673,9 @@ export default function Acknowledgment() {
                                   </center>
                               <br />
                                 <Footer/>
-                        </Dialog>                                  
-        </Grid>    
+                        </Dialog>  
+      
 
-         <Grid container rowSpacing={1} columnSpacing={{xs:1, sm:2,md:3}}
-          alignItems= "center"
-          justifyContent= "center"                                                                                                               
-         >                                               
                <Grid margin="auto">
                     <Card sx={{ maxWidth: 345}} className="bottomRight">
                         <CardActionArea>
@@ -630,7 +708,7 @@ export default function Acknowledgment() {
                             </CardContent>
                         </CardActionArea>
                         </Card>
-            </Grid> 
+                </Grid> 
                     <Dialog
                           fullScreen
                           open={openStrat}
@@ -661,7 +739,7 @@ export default function Acknowledgment() {
                               <br />
                                 <Footer/>
                         </Dialog>                                          
-         </Grid>                                                
+        </Grid>                                                
      </Box>
      </Container>
     </>
