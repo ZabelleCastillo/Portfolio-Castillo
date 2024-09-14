@@ -221,7 +221,7 @@ export default function AboutMe() {
                                   "Hello, I'm Jessa Belle, known as either Zabelle, Jess or Belle. Located in Minglanilla, 
                                   Cebu - 6064 PH. As a Software Engineer, I am currently focusing on Boomi which is using for 
                                   integration that involves API. 
-                                  I worked as a Software Test Engineer in my previous job, my duties encompass utilizing Zentao 
+                                  I worked as a Former Software Test Engineer in my previous job, my duties encompass utilizing Zentao 
                                   as a project management tool for reporting bugs, underscoring the pivotal role I play 
                                   in assuring the quality, functionality, and performance of software products before their launch.          
                                 </Box>

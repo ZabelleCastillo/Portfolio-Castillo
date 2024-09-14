@@ -224,7 +224,7 @@ export default function Acknowledgment() {
                                     <center>
                                         <Typography color="body1" gutterBottom variant="h6" component="div">
                                             <Box sx={{ fontWeight: 'bold', m: 0}}>
-                                            Professional Application Programming Interface Design {<br/>} Boomi
+                                            Professional API Design {<br/>} Boomi
                                             </Box>  
                                         </Typography>
                                     
