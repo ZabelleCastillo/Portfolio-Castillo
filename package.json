@@ -19,6 +19,8 @@
     "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.8",
     "bootstrap": "^5.3.3",
+    "browserslist": "^4.23.3",
+    "caniuse-lite": "^1.0.30001660",
     "dotenv": "^16.4.5",
     "emailjs": "^4.0.3",
     "formik": "^2.4.5",

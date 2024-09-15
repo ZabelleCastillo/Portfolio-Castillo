@@ -226,7 +226,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                         padding: "8px 16px",
                                                         fontSize: "13px",
                                                       }} 
-                                                        href={require("../assets/PDF/STE_JBC.pdf")} 
+                                                        href={require("../assets/PDF/ASE_JBC.pdf")} 
                                                       download="CV_JBC"
                                                       variant="contained"> Download CV </Button> 
                                                        {/* <br />
