@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/Portfolio-Castillo/static/css/main.d386dfae.css",
-    "main.js": "/Portfolio-Castillo/static/js/main.c5722392.js",
+    "main.js": "/Portfolio-Castillo/static/js/main.f1773b20.js",
     "static/js/213.95beb2bc.chunk.js": "/Portfolio-Castillo/static/js/213.95beb2bc.chunk.js",
     "static/js/553.5e9c9994.chunk.js": "/Portfolio-Castillo/static/js/553.5e9c9994.chunk.js",
     "static/js/453.a896885d.chunk.js": "/Portfolio-Castillo/static/js/453.a896885d.chunk.js",
@@ -40,18 +40,18 @@
     "static/media/css.gif": "/Portfolio-Castillo/static/media/css.0e41e4e4b868efaf64c4.gif",
     "static/media/html.gif": "/Portfolio-Castillo/static/media/html.b2380d273412f3cbaf4f.gif",
     "static/media/Belle2_photo.jpg": "/Portfolio-Castillo/static/media/Belle2_photo.c0f87694512685098709.jpg",
-    "static/media/STE_JBC.pdf": "/Portfolio-Castillo/static/media/STE_JBC.9d0ef420098e9c6db1bc.pdf",
     "static/media/manualtesting.jpg": "/Portfolio-Castillo/static/media/manualtesting.ec7e32e471f0026e5829.jpg",
     "static/media/automationtesting.jpg": "/Portfolio-Castillo/static/media/automationtesting.7f8d0e0d62ec34c3b97f.jpg",
+    "static/media/ASE_JBC.pdf": "/Portfolio-Castillo/static/media/ASE_JBC.19c7fdb951e19fb1dfd7.pdf",
     "index.html": "/Portfolio-Castillo/index.html",
     "main.d386dfae.css.map": "/Portfolio-Castillo/static/css/main.d386dfae.css.map",
-    "main.c5722392.js.map": "/Portfolio-Castillo/static/js/main.c5722392.js.map",
+    "main.f1773b20.js.map": "/Portfolio-Castillo/static/js/main.f1773b20.js.map",
     "213.95beb2bc.chunk.js.map": "/Portfolio-Castillo/static/js/213.95beb2bc.chunk.js.map",
     "553.5e9c9994.chunk.js.map": "/Portfolio-Castillo/static/js/553.5e9c9994.chunk.js.map",
     "453.a896885d.chunk.js.map": "/Portfolio-Castillo/static/js/453.a896885d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d386dfae.css",
-    "static/js/main.c5722392.js"
+    "static/js/main.f1773b20.js"
   ]
 }
