@@ -152,10 +152,12 @@ export default function Home(propsBackTop,propsElevate) {
                                                         automation testing. Additionally, I possess proficiency in coding and design, 
                                                         with a keen passion for crafting aesthetically pleasing front-end interfaces that 
                                                         deliver exceptional user experiences. */}
-                                                        , specializing in Apigee. I am eagerly anticipating my 
-                                                        upcoming project and am enthusiastic about building a 
-                                                        remarkable project where I will also apply my software 
-                                                        testing skills.
+                                                        , specializing in Boomi for API back-end, I am passionate about developing exceptional projects
+                                                        where I can also apply my software testing skills as a Boomi Developer. My role focuses on 
+                                                        designing, developing, and implementing integration processes using the Dell Boomi platform, 
+                                                        ensuring seamless data flow between various systems, applications, and databases. I work with 
+                                                        cloud-based, on-premise, and hybrid environments, building and maintaining connections 
+                                                        across disparate systems.
                                                   </Typography>   
                                                 </m.div>          
                                           <Grid container direction="row"
@@ -224,7 +226,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                         padding: "8px 16px",
                                                         fontSize: "13px",
                                                       }} 
-                                                        href={require("../assets/PDF/STE_JBC.pdf")} 
+                                                        href={require("../assets/PDF/ASE_JBC.pdf")} 
                                                       download="CV_JBC"
                                                       variant="contained"> Download CV </Button> 
                                                        {/* <br />
