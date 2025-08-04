@@ -444,7 +444,20 @@ export default function Skills() {
                                                          </span>
                                                     </Box>                             
                                                 </Typography> 
-                                                <hr/>         
+                                                <hr/>   
+
+                                                <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
+                                                          Microsoft Azure
+                                                         <span>
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value22} text={`${value22}%`}  /> 
+                                                            </Box> 
+                                                         </span>
+                                                    </Box>                             
+                                                </Typography> 
+                                                <hr/>       
                                         </div>
                                     </Item2>
                               </Grid>
@@ -607,7 +620,20 @@ export default function Skills() {
                                                          </span>
                                                     </Box>                             
                                                 </Typography> 
-                                                <hr/>              
+                                                <hr/>  
+
+                                                  <Typography color="body1" gutterBottom variant="h6" component="div">     
+                                                    <Box sx={{ fontWeight: 'bold', m: 0}}>
+                                                          Oracle SQL Developer
+                                                         <span>
+                                                            <Box 
+                                                            style={{ width: 50, height: 50, float: "right", fontWeight: 'none', fontSize: '0.99em', m: 0, color:'#002E4E' }}> 
+                                                            <CircularProgressbar value={value18} text={`${value18}%`}  /> 
+                                                            </Box> 
+                                                         </span>
+                                                    </Box>                             
+                                                </Typography> 
+                                                <hr/>             
                                             </div>
                                     </Item2>
                                 </Grid>

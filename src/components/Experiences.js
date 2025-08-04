@@ -19,6 +19,7 @@ import {Slide} from "@mui/material";
 import CalendarMonthIcon from '@mui/icons-material/CalendarMonth';
 import BusinessIcon from '@mui/icons-material/Business';
 import InfoIcon from '@mui/icons-material/Info';
+import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import Tooltip from '@mui/material/Tooltip';
 import {Helmet} from "react-helmet";
 ////////////////////////////////////////
@@ -171,6 +172,19 @@ export default function Experiences() {
                                     {<InfoIcon/>} Skill sets...
                                 </Typography>
                               </NavLink>
+                              </Tooltip> 
+                              <br />
+                              <Tooltip title="Check out my progress on Skillsoft training modules.">
+                                  <Typography
+                                    className="typographyText"
+                                    sx={{ "&:hover": { color: "#d9ff00", cursor: 'pointer' } }} // Fixed pointer typo
+                                    component="a"
+                                    href="https://skillsoft.digitalbadges.skillsoft.com/profile/jessabellecastillo296151/wallet"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                  >                                   
+                                      {<WorkspacePremiumIcon/>} Skillsoft 
+                                  </Typography>              
                               </Tooltip>                
                             </Item>
                     </Grid>
