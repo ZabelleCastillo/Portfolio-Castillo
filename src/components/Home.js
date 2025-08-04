@@ -218,17 +218,20 @@ export default function Home(propsBackTop,propsElevate) {
                                                     alignItems= "center"
                                                     justifyContent= "center"
                                               >
-                                                  <Button className={classes.button}   
-                                                   sx={{ color: "#fff" }}
-                                                      style={{
-                                                        borderRadius: 35,
-                                                        backgroundColor: "#002E4E",
-                                                        padding: "8px 16px",
-                                                        fontSize: "13px",
-                                                      }} 
-                                                        href={require("../assets/PDF/ASE_JBC.pdf")} 
-                                                      download="CV_JBC"
-                                                      variant="contained"> Download CV </Button> 
+                                                  <Tooltip title="Download my current work and projects from my present company.">
+                                                    <Button className={classes.button}   
+                                                          sx={{ color: "#fff" }}
+                                                              style={{
+                                                              borderRadius: 35,
+                                                              backgroundColor: "#002E4E",
+                                                              padding: "8px 16px",
+                                                              fontSize: "13px",
+                                                          }} 
+                                                            href={require("../assets/PDF/jessa.belle.castillo_CV.pptx")} 
+                                                          download="CV_JBC"
+                                                          variant="contained"> Download CV 
+                                                      </Button> 
+                                                    </Tooltip>
                                                        {/* <br />
                                                   <div>                                            
                                                     <QRCode value="../assets/PDF/STE_JBC.pdf" 

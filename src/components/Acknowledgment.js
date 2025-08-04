@@ -81,6 +81,53 @@ const useStyles = makeStyles({
   }})
   
   ///////////////////////////////////////////
+  const CertificationCard = ({ image, title, onClick }) => (
+    <Card sx={{ maxWidth: 345 }}>
+      <CardActionArea>
+        <CardMedia component="img" height="300px" image={image} alt={title} />
+        <CardContent>
+          <Typography gutterBottom variant="h6" component="div" align="center">
+            <Box sx={{ fontWeight: 'bold' }}>{title}</Box>
+          </Typography>
+          <Box textAlign="center">
+            <Button
+              onClick={onClick}
+              sx={{
+                color: "#fff",
+                bgcolor: "#002E4E",
+                '&:hover': { bgcolor: "#001F36", color: "#d9ff00" },
+                borderRadius: 35,
+                padding: "8px 16px",
+                fontSize: "13px",
+              }}
+              variant="contained"
+            >
+              View
+            </Button>
+          </Box>
+        </CardContent>
+      </CardActionArea>
+    </Card>
+  );
+  
+  const CertificationDialog = ({ open, onClose, image }) => (
+    <Dialog fullScreen open={open} onClose={onClose} TransitionComponent={Transition}>
+      <AppBar sx={{ position: 'relative', backgroundColor: '#002E4E' }}>
+        <Toolbar>
+          <IconButton edge="start" color="inherit" onClick={onClose} aria-label="close">
+            <CloseIcon />
+          </IconButton>
+          <Typography sx={{ ml: 2, flex: 1 }} variant="h6">Acknowledgment</Typography>
+        </Toolbar>
+      </AppBar>
+      <Box textAlign="center" mt={4}>
+        <img src={image} alt="" width="50%" />
+      </Box>
+      <Footer />
+    </Dialog>
+  );
+
+  
 export default function Acknowledgment() {
     const classes = useStyles()
    ///////////////////////////////////////////
@@ -169,6 +216,13 @@ export default function Acknowledgment() {
  const handleCloseStrat = () => {
   setOpenStrat(false);
  };
+
+//////////////////////////////////////////////////
+const [visibleSections, setVisibleSections] = useState(1);
+
+const handleSeeMore = () => setVisibleSections(prev => prev + 1);
+const handleSeeLess = () => setVisibleSections(1);
+
   return (
     <>
     <Helmet>
@@ -176,10 +230,9 @@ export default function Acknowledgment() {
             <meta name="Acknowledgment" content="Acknowledgment" />
       </Helmet>
     <div style={background}></div>
-   <Container sx={{padding: '2rem', marginTop: "-320px",}}>
-   <Box  sx={{ flexGrow: 1 }} >
-
-   <Grid>
+    <Container sx={{padding: '2rem', marginTop: "-320px",}}>
+    <Box  sx={{ flexGrow: 1 }} >
+    <Grid>
                 <Slide
                       direction="left"
                       in={checkedSlide}
@@ -206,6 +259,12 @@ export default function Acknowledgment() {
                     </Grid>
                 </Slide>
    </Grid>
+    {/* Add vertical space here */}
+    <Box sx={{ mt: 4 }} />  {/* mt = margin-top, 4 = ~32px */}
+    {visibleSections >= 1 && (
+  <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} alignItems="center" justifyContent="center">
+    {/* Cards group 1: API, Integration Dev, Associate Dev */}
+  
         <Grid container rowSpacing={1} columnSpacing={{xs:1, sm:2,md:3}}
                 alignItems= "center"
                 justifyContent= "center" >
@@ -224,7 +283,7 @@ export default function Acknowledgment() {
                                     <center>
                                         <Typography color="body1" gutterBottom variant="h6" component="div">
                                             <Box sx={{ fontWeight: 'bold', m: 0}}>
-                                            Professional API Design {<br/>} Boomi
+                                            Professional API Design Certification {<br/>} Boomi
                                             </Box>  
                                         </Typography>
                                     
@@ -289,7 +348,7 @@ export default function Acknowledgment() {
                                     <center>
                                         <Typography color="body1" gutterBottom variant="h6" component="div">
                                             <Box sx={{ fontWeight: 'bold', m: 0}}>
-                                            Professional Integration Developer - Boomi
+                                            Professional Integration Developer Certification <br /> Boomi
                                             </Box>  
                                         </Typography>
                                     
@@ -354,7 +413,7 @@ export default function Acknowledgment() {
                                     <center>
                                         <Typography color="body1" gutterBottom variant="h6" component="div">
                                             <Box sx={{ fontWeight: 'bold', m: 0}}>
-                                            Associate Integration Developer - Boomi
+                                            Associate Integration Developer Certification <br /> Boomi
                                             </Box>  
                                         </Typography>
                                     
@@ -405,7 +464,14 @@ export default function Acknowledgment() {
                                 <Footer/>
                         </Dialog>                                                            
      </Grid>  
-     <Grid container rowSpacing={1} columnSpacing={{xs:1, sm:2,md:3}}
+  </Grid>
+)}
+ {/* Add vertical space here */}
+ <Box sx={{ mt: 4 }} />  {/* mt = margin-top, 4 = ~32px */}
+{visibleSections >= 2 && (
+  <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} alignItems="center" justifyContent="center">
+    {/* Cards group 2: Auto Test, Manual Test, QGIS */}
+    <Grid container rowSpacing={1} columnSpacing={{xs:1, sm:2,md:3}}
         alignItems= "center"
         justifyContent= "center"                                                                                                               
      >
@@ -604,8 +670,16 @@ export default function Acknowledgment() {
                                 <Footer/>
                         </Dialog>                                           
         </Grid>    
+  </Grid>
+)}
 
-        <Grid container rowSpacing={1} columnSpacing={{xs:1, sm:2,md:3}}
+ {/* Add vertical space here */}
+ <Box sx={{ mt: 4 }} />  {/* mt = margin-top, 4 = ~32px */}
+
+{visibleSections >= 3 && (
+  <Grid container rowSpacing={2} columnSpacing={{ xs: 1, sm: 2, md: 3 }} alignItems="center" justifyContent="center">
+    {/* Cards group 3: Arduino, Online Strategy */}
+    <Grid container rowSpacing={1} columnSpacing={{xs:1, sm:2,md:3}}
           alignItems= "center"
           justifyContent= "center"                                                                                                               
          >          
@@ -739,7 +813,57 @@ export default function Acknowledgment() {
                               <br />
                                 <Footer/>
                         </Dialog>                                          
-        </Grid>                                                
+        </Grid>         
+  </Grid>
+)}
+
+<Box sx={{ textAlign: "center", mt: 4 }}>
+  {visibleSections < 3 ? (
+    <Typography
+      onClick={handleSeeMore}
+      sx={{
+        display: "inline-block",
+        padding: "10px 20px",
+        borderRadius: "30px",
+        backgroundColor: "#002E4E",
+        color: "#fff",
+        fontWeight: "bold",
+        cursor: "pointer",
+        "&:hover": {
+          color: "#d9ff00",
+          textDecoration: "none",
+        },
+      }}
+    >
+      See more
+    </Typography>
+  ) : (
+    <Typography
+      onClick={handleSeeLess}
+      sx={{
+        display: "inline-block",
+        padding: "10px 20px",
+        borderRadius: "30px",
+        backgroundColor: "#002E4E",
+        color: "#fff",
+        fontWeight: "bold",
+        cursor: "pointer",
+        "&:hover": {
+          color: "#d9ff00",
+          textDecoration: "none",
+        },
+      }}
+    >
+      See less
+    </Typography>
+  )}
+</Box>
+ 
+
+   
+    
+
+                                               
      </Box>
      </Container>
     </>
