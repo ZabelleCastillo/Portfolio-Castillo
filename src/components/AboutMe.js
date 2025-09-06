@@ -54,7 +54,7 @@ const Item2 = styled(Paper)(({ theme }) => ({
    zIndex: 2,
  }));
 
-export default function AboutMe() {
+export default function AboutMe({mode}) {
   const [over, setOver] = useState(false);
   /////////////////////////////
   const [checkedSlide, setCheckedSlide] = useState(false);
@@ -230,18 +230,31 @@ export default function AboutMe() {
                 >  
                       <Grid item xs={12}>
                           <Item2>
-                              <Typography color="primary">
+                              <Typography>
                                 <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
-                                  "Hello, I'm Jessa Belle, known as either Zabelle, Jess or Belle. Located in Minglanilla, 
-                                  Cebu - 6064 PH. As a Software Engineer, I am currently focusing on Boomi which is using for 
-                                  integration that involves API. 
-                                  I worked as a Former Software Test Engineer in my previous job, my duties encompass utilizing Zentao 
-                                  as a project management tool for reporting bugs, underscoring the pivotal role I play 
-                                  in assuring the quality, functionality, and performance of software products before their launch.          
+                                  "Hello, I'm Jessa Belle, also known as Zabelle, Jess, or Belle, located in Minglanilla, Cebu - 6064 PH. 
+                                  I am a Software Engineer currently working as a full-stack AngularJS and NodeJS developer, handling both 
+                                  frontend and backend development. My current project focuses on building an AI assistant platform that helps 
+                                  users query and receive intelligent, accurate responses to their questions, enhancing user experience and support.          
                                 </Box>
                               </Typography>
                             <br />
-                              <Typography color="primary">
+                             <Typography>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
+                                Previously, I specialized in Boomi integration, working with APIs to ensure seamless data flow between systems. I also have experience 
+                                as a Software Test Engineer, where I used Zentao as a project management tool to report bugs and ensure the quality, functionality, 
+                                and performance of software products before release.
+                                </Box>
+                              </Typography>
+                            <br />
+                            <Typography>
+                                <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
+                                I am passionate about creating user-friendly, intelligent solutions, combining my skills in integration, testing, and full-stack development to 
+                                deliver high-quality software that truly supports users.
+                                </Box>
+                              </Typography>
+                            <br />
+                              <Typography>
                                 <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                     This involves hands-on interaction with the software and the execution of test scripts 
                                     to systematically identify and address bugs and errors, ensuring the software operates 
@@ -250,7 +263,7 @@ export default function AboutMe() {
                                 </Box>                               
                               </Typography>
                               <br />
-                              <Typography color="primary">
+                              <Typography>
                                 <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                   While my past involvement in software testing, web design and coding was not extensively pursued, I still retain 
                                   a passion for these areas. As a software engineer, this background proves advantageous as 
@@ -260,7 +273,7 @@ export default function AboutMe() {
                                 </Box>  
                               </Typography>
                               <br />
-                              <Typography  color="primary">
+                              <Typography>
                                 <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                     Beyond my role as a Software Engineer, I find joy in various hobbies such as 
                                     working out, hiking, and indulging in motivational books. I'm passionate about sports 
@@ -269,7 +282,7 @@ export default function AboutMe() {
                                 </Box>                 
                               </Typography>
                               <br />
-                              <Typography  color="primary">
+                              <Typography>
                                 <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                   With a diverse professional background, I've worked as an Outsourcing Agent, been 
                                   self-employed with Sogod BellyChon, and held roles such as Company Secretary, Call 
