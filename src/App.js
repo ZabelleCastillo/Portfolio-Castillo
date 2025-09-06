@@ -18,55 +18,6 @@ import { createTheme, ThemeProvider } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import { motion, useScroll } from "framer-motion";
 
-
-// ✅ Messenger Component
-const FacebookMessenger = () => {
-  const chatRef = React.useRef();
-
-  useEffect(() => {
-    console.log("🔄 Setting up Messenger Chat Plugin...");
-
-    if (chatRef.current) {
-      chatRef.current.setAttribute("page_id", "264391036764466"); // 👈 Your Page ID
-      chatRef.current.setAttribute("attribution", "biz_inbox");
-    }
-
-    if (!document.getElementById("facebook-jssdk")) {
-      window.fbAsyncInit = function () {
-        console.log("✅ FB SDK initialized");
-        window.FB.init({
-          xfbml: true,
-          version: "v16.0",
-        });
-      };
-
-      (function (d, s, id) {
-        let js,
-          fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-        js = d.createElement(s);
-        js.id = id;
-        js.src =
-          "https://connect.facebook.net/en_US/sdk/xfbml.customerchat.js";
-        fjs.parentNode.insertBefore(js, fjs);
-        console.log("📥 FB SDK script injected");
-      })(document, "script", "facebook-jssdk");
-    }
-  }, []);
-
-  return (
-    <>
-      <div id="fb-root"></div>
-      <div
-        ref={chatRef}
-        id="fb-customer-chat"
-        className="fb-customerchat"
-      ></div>
-    </>
-  );
-};
-
-
 function App() {
   const { scrollYProgress } = useScroll({
     offset: ["start start", "end end"],
@@ -85,6 +36,12 @@ function App() {
       setIsloading(false);
     }, 2500);
   }, []);
+
+  // ✅ Messenger Test Button handler
+  const openMessenger = () => {
+    console.log("Opening Messenger link...");
+    window.open("https://m.me/264391036764466", "_blank");
+  };
 
   return (
     <>
@@ -122,8 +79,24 @@ function App() {
                 <Route path="*" element={<Navigate to="/404" />} />
               </Routes>
 
-              {/* ✅ Messenger Floating Chat Plugin */}
-              <FacebookMessenger />
+              {/* ✅ Messenger Test Button (moved to left side) */}
+              <div style={{ position: "fixed", bottom: "20px", left: "20px" }}>
+                <button
+                  onClick={openMessenger}
+                  style={{
+                    padding: "12px 18px",
+                    backgroundColor: "#0084FF",
+                    color: "white",
+                    border: "none",
+                    borderRadius: "50px",
+                    cursor: "pointer",
+                    fontSize: "16px",
+                    boxShadow: "0px 4px 8px rgba(0,0,0,0.2)",
+                  }}
+                >
+                  💬 Chat on Messenger
+                </button>
+              </div>
 
               <Footer />
             </Box>
