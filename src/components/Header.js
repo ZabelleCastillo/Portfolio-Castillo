@@ -470,12 +470,12 @@ export default function Header({propsBackTop,propsElevate, mode, setMode}) {
      
 
                                                      
-                <ScrollTop {...propsBackTop}>
+                {/* <ScrollTop {...propsBackTop}>
                   <Fab size="small" aria-label="scroll back to top" >
                     <KeyboardArrowUpIcon  sx={{ zIndex: 1300}}
                    style={{ zIndex: 'auto' }} />
                   </Fab>
-                </ScrollTop>          
+                </ScrollTop>           */}
                                                 
 
     </>
