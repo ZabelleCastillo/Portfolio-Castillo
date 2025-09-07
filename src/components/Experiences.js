@@ -204,7 +204,7 @@ export default function Experiences() {
                             <Typography 
                                 fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
-                                 {<WorkIcon/>}  Software Engineer Associate  
+                                 {<WorkIcon/>}  Software Engineer  
                               </Typography>
 
                              <Typography
@@ -221,7 +221,7 @@ export default function Experiences() {
                                 <Typography>
                                   <Box sx={{ fontWeight: 'none', fontSize: 14, m: 0 }}>
                                     <p>
-                                      <strong>Job responsibilities: </strong> As a Software Engineer Associate, my job responsibilities encompass both back-end and front-end development across multiple platforms. 
+                                      <strong>Job responsibilities: </strong> As a Software Engineer, my job responsibilities encompass both back-end and front-end development across multiple platforms. 
                                       From August 2024 to August 2025, I worked extensively with Boomi for API integration. Initially, our main goal was to migrate data from TIBCO to Boomi, ensuring 
                                       seamless transition and minimal disruption to business operations. My responsibilities included designing and implementing end-to-end integration solutions using 
                                       the Boomi platform, developing workflows, connectors, and APIs to ensure smooth data exchange between systems. I tested integrations to verify alignment with business 
@@ -259,7 +259,7 @@ export default function Experiences() {
                               <Typography 
                                 fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
-                                 {<WorkIcon/>}   Associate Software Test Engr.  
+                                 {<WorkIcon/>} Software Test Engineer
                               </Typography>
 
                               <Typography

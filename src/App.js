@@ -5,7 +5,7 @@ import { Box, useScrollTrigger, Zoom, Fab } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { motion, useScroll } from "framer-motion";
 import { CirclesWithBar } from "react-loader-spinner";
-
+import Tooltip from '@mui/material/Tooltip';
 import Home from "./components/Home";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -136,6 +136,7 @@ function App() {
               </Routes>
 
               {/* Messenger Floating Button */}
+              <Tooltip title="Let's talk!">
               <button style={messengerBtnStyle} onClick={openMessenger}>
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -145,6 +146,7 @@ function App() {
                   <path d="M18 0C8.058 0 0 7.163 0 16c0 4.787 2.293 9.065 5.91 11.944V36l6.14-3.237C15.146 33.157 16.56 33.5 18 33.5 27.942 33.5 36 26.337 36 17.5 36 7.663 27.942 0 18 0zm2.625 21.5l-4.75-5.25-8.25 5.25 9-6.5 4.75 5.25 8.25-5.25-9 6.5z" />
                 </svg>
               </button>
+              </Tooltip>
 
               {/* Scroll to Top Button */}
               <ScrollTop>
