@@ -265,7 +265,7 @@ export default function Experiences() {
                               <Typography
                                fontWeight='none' fontSize= '16' m= '0' color="primary"
                                sx={{ "&:hover": { color: "#d9ff00" } }} >
-                                {<CalendarMonthIcon/>} May 23, 2023 – June 21, 2024                           
+                                {<CalendarMonthIcon/>} March 23, 2023 – June 21, 2024                           
                               </Typography>
                               
                               <Typography
