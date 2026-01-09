@@ -303,7 +303,7 @@ export default function Experiences() {
                               <Typography
                                 fontWeight='none' fontSize= '16' m= '0' color="primary" 
                                 sx={{ "&:hover": { color: "#d9ff00" } }} >
-                              {<CalendarMonthIcon/>} January 2023 – April 2023 
+                              {<CalendarMonthIcon/>} December 2022 – March 2023 
                               </Typography>
                               <Typography
                                 fontWeight='none' fontSize= '16' m= '0' color="primary" 
