@@ -42,7 +42,7 @@ export default function Footer() {
     
                 <Grid>
                     <Typography className="bottomLeft">
-                        Jessa Belle | Software Test Engineer.    
+                        Jessa Belle | Software Engineer 👩‍💻.    
                     </Typography>
                 </Grid>
             

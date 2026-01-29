@@ -385,7 +385,8 @@ export default function Services() {
             </Container>
     </Box>
       </Container>
-   
+    {/* Optional extra space inside */}
+    <Box sx={{ height: "20px" }} /> {/* You can adjust/remove this */}
       <CssBaseline />
     </>
   );

@@ -41,7 +41,7 @@ const useStyles = makeStyles({
 
 ///////////////////////////////////////////
 
-export default function Home(propsBackTop,propsElevate) {
+export default function Home({propsBackTop,propsElevate, mode}) {
   //const { toPDF, targetRef } = usePDF({filename: '../assets/PDF/STE_JBC.pdf'});
   //const targetRef = useRef(); //for generate pdf files
   const classes = useStyles()
@@ -118,7 +118,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                   style={{
                                                     fontWeight: "bold",
                                                     fontSize: "30px",
-                                                    color: "#002E4E",
+                                                    color: mode === "dark" ? "yellow" : "#002E4E",
                                                     marginLeft:"25px" 
                                                   }}
                                                 >
@@ -141,7 +141,7 @@ export default function Home(propsBackTop,propsElevate) {
                                                           style={{
                                                             fontWeight: "bold",
                                                             fontSize: "30px",
-                                                            color: "#002E4E",
+                                                            color: mode === "dark" ? "yellow" : "#002E4E",
                                                             textAlign: "justify", 
                                                           }}
                                                         >
@@ -152,12 +152,15 @@ export default function Home(propsBackTop,propsElevate) {
                                                         automation testing. Additionally, I possess proficiency in coding and design, 
                                                         with a keen passion for crafting aesthetically pleasing front-end interfaces that 
                                                         deliver exceptional user experiences. */}
-                                                        , specializing in Boomi for API back-end, I am passionate about developing exceptional projects
+                                                        {/* , specializing in Boomi for API back-end, I am passionate about developing exceptional projects
                                                         where I can also apply my software testing skills as a Boomi Developer. My role focuses on 
                                                         designing, developing, and implementing integration processes using the Dell Boomi platform, 
                                                         ensuring seamless data flow between various systems, applications, and databases. I work with 
                                                         cloud-based, on-premise, and hybrid environments, building and maintaining connections 
-                                                        across disparate systems.
+                                                        across disparate systems. */}
+                                                        , with experience in Boomi integration and AngularJS/NodeJS development. I build seamless API integrations and 
+                                                        AI-driven platforms that help users query and understand their needs, focusing on both frontend and backend 
+                                                        development to deliver intelligent, user-friendly solutions.
                                                   </Typography>   
                                                 </m.div>          
                                           <Grid container direction="row"

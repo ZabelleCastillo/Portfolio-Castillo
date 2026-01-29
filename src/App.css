@@ -215,3 +215,46 @@ html{
     left: 0; 
   } */
   /*end-sample hover for nav link*/
+
+  /* App.css */
+
+/* Messenger chat widget positioning */
+.fb-messenger-chat {
+  position: fixed;
+  bottom: 50px;  /* Adjust bottom position */
+  left: 15px;    /* Position it 15px from the left */
+  z-index: 9999; /* Ensure it's on top of other elements */
+  width: 260px;  /* Set a fixed width */
+  height: 400px; /* Set a fixed height */
+  border-radius: 8px; /* Optional: round the corners */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Optional: add shadow for a nice effect */
+  transition: all 0.3s ease-in-out; /* Smooth transition for movements */
+}
+
+/* Optional: Style for dark theme */
+/* body {
+  background-color: #121212;  /* Dark background color */
+/*  color: #fff; /* White text color */
+/*} */
+
+/* Customize Messenger button when in minimized mode */
+.fb-messenger-chat[style*="minimized"] {
+  width: 60px;  /* Minimized width */
+  height: 60px; /* Minimized height */
+  border-radius: 50%; /* Circular button */
+  bottom: 10px; /* Position it 10px from the bottom */
+  left: 15px;   /* Align left with other content */
+}
+
+/* Ensure the Facebook Messenger iframe is responsive */
+.fb-messenger-chat iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Optional: Add a hover effect for the button when it's minimized */
+.fb-messenger-chat:hover {
+  transform: scale(1.1);  /* Slightly enlarge the button when hovered */
+  transition: all 0.3s ease;
+}
